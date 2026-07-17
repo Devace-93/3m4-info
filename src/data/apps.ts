@@ -4,6 +4,8 @@ export interface AppEntry {
   category: string;
   description: string;
   status: 'live' | 'building';
+  /** The app's own og:image — shown as the card's banner. Omit until the app ships one. */
+  image?: string;
 }
 
 // Add new apps here as they get published — each entry becomes a card,
@@ -16,6 +18,7 @@ export const apps: AppEntry[] = [
     description:
       'Turn animated GIFs into print-ready kinegrams (scanimations) — the interlaced image and its barrier grid, generated together.',
     status: 'live',
+    image: 'https://kinegram.3m4.net/og-image.png',
   },
   {
     name: 'Bubbles',
@@ -24,6 +27,7 @@ export const apps: AppEntry[] = [
     description:
       'A fruit-popping arcade mini-game. Pop fruit, dodge vegetables, chain streaks — classic 2015 edition and a Phaser 3 remaster.',
     status: 'live',
+    image: 'https://bubbles.3m4.net/og/share.png',
   },
   {
     name: '3m4',
