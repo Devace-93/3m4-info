@@ -1,0 +1,14 @@
+{
+  "name": "3m4-info",
+  "type": "module",
+  "private": true,
+  "description": "Index of apps published under 3m4.net",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.2.5"
+  }
+}

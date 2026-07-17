@@ -1,0 +1,99 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#605dff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="3m4" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: title,
+      url: canonical,
+      description,
+    })} />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #0b0c10;
+    --surface: #15171e;
+    --surface-hover: #1b1e27;
+    --border: #262a35;
+    --text: #e8e9ed;
+    --text-dim: #9a9ea9;
+    --accent: #7b78ff;
+    --accent-text: #ffffff;
+    --badge-building-bg: #3a2f0d;
+    --badge-building-text: #f0c14b;
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f7fb;
+      --surface: #ffffff;
+      --surface-hover: #f0f0f8;
+      --border: #e3e3ec;
+      --text: #1b1c22;
+      --text-dim: #5c6070;
+      --accent: #605dff;
+      --accent-text: #ffffff;
+      --badge-building-bg: #fdf1d6;
+      --badge-building-text: #8a6a10;
+      color-scheme: light;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+    line-height: 1.5;
+  }
+
+  a {
+    color: inherit;
+  }
+</style>

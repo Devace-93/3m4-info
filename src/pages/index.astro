@@ -1,0 +1,203 @@
+---
+import Base from '../layouts/Base.astro';
+import { apps } from '../data/apps.ts';
+
+const categories: string[] = [];
+for (const app of apps) {
+  if (!categories.includes(app.category)) categories.push(app.category);
+}
+const grouped = categories.map((category) => ({
+  category,
+  apps: apps.filter((app) => app.category === category),
+}));
+
+const title = '3m4 — Apps index';
+const description = 'Index of apps and tools published under 3m4.net, grouped by category.';
+---
+<Base title={title} description={description}>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">3m4.net</p>
+      <h1>Apps index</h1>
+      <p class="lede">
+        Small tools and games I've built and published under this domain. New ones get added
+        here as they ship.
+      </p>
+    </header>
+
+    {
+      grouped.map(({ category, apps: categoryApps }) => (
+        <section class="category">
+          <h2>{category}</h2>
+          <div class="grid">
+            {categoryApps.map((app) => {
+              const isLive = app.status === 'live';
+              const Tag = isLive ? 'a' : 'div';
+              return (
+                <Tag
+                  class="card"
+                  {...(isLive ? { href: app.url, target: '_blank', rel: 'noopener noreferrer' } : { 'aria-disabled': 'true' })}
+                >
+                  <div class="card-top">
+                    <h3>{app.name}</h3>
+                    <span class={`badge ${isLive ? 'badge-live' : 'badge-building'}`}>
+                      {isLive ? 'Live' : 'Building'}
+                    </span>
+                  </div>
+                  <p>{app.description}</p>
+                  {isLive && <span class="card-url">{app.url.replace('https://', '')} →</span>}
+                </Tag>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+
+    <footer>
+      <p>
+        Built by Enrique Magallon Alvarez ·{' '}
+        <a href="https://github.com/Devace-93" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </footer>
+  </main>
+</Base>
+
+<style>
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    margin: 0;
+    max-width: 60ch;
+    color: var(--text-dim);
+    font-size: 1.05rem;
+  }
+
+  .category {
+    margin-bottom: 2.5rem;
+  }
+
+  .category h2 {
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: var(--text);
+    transition:
+      transform 0.15s ease,
+      background 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  a.card:hover,
+  a.card:focus-visible {
+    background: var(--surface-hover);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  div.card[aria-disabled='true'] {
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+  }
+
+  .badge {
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .badge-live {
+    background: var(--accent);
+    color: var(--accent-text);
+  }
+
+  .badge-building {
+    background: var(--badge-building-bg);
+    color: var(--badge-building-text);
+  }
+
+  .card-url {
+    margin-top: auto;
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+
+  footer a {
+    color: var(--text-dim);
+    text-decoration: underline;
+  }
+</style>
