@@ -2,3 +2,11 @@ node_modules/
 dist/
 .astro/
 .DS_Store
+
+# Local env — secrets live here, never committed (.env.example is the reference)
+.env
+.env.*.local
+
+# Local tooling
+.lavish/
+.playwright-mcp/

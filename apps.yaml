@@ -1,0 +1,39 @@
+# Registry of apps the orchestrator (scripts/start.mjs) can run.
+# Paths are relative to this repo. Every port can be overridden in .env
+# via <ID>_DEV_PORT / <ID>_PROD_PORT (id uppercased, '-' -> '_').
+apps:
+  info:
+    path: .
+    engine: npm
+    devCmd: npm run dev
+    devPort: 4321
+    prodService: info
+    prodPort: 8080
+  kinegram:
+    path: ../kinegrama
+    engine: npm
+    devCmd: npm run dev
+    devPort: 4322
+    prodService: kinegram
+    prodPort: 8081
+    # env var the info site uses to link to this app, and the production URL
+    # used when the app is not part of the local run
+    urlVar: PUBLIC_KINEGRAM_URL
+    url: https://kinegram.3m4.net
+  bubbles:
+    path: ../bubbles
+    engine: bun
+    devCmd: bun run dev
+    devPort: 4323
+    prodService: bubbles
+    prodPort: 8082
+    urlVar: PUBLIC_BUBBLES_URL
+    url: https://bubbles.3m4.net
+  bubbles-classic:
+    # Legacy 2015 edition; its own server in dev, /classic/ inside bubbles in prod.
+    path: ../bubbles
+    engine: bun
+    devCmd: bun run dev:legacy
+    devPort: 8015
+    devOnly: true
+    startWith: bubbles

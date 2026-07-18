@@ -1,5 +1,33 @@
+# Local prod-mode orchestration: real Dockerfile+nginx builds of each app,
+# one compose profile per app. Normally started via `npm run start:prod
+# [-- apps…]`, which picks profiles and exports the *_PROD_PORT / *_URL
+# variables — the defaults below match a full local run.
 services:
   info:
-    build: .
+    build:
+      context: .
+      args:
+        PUBLIC_KINEGRAM_URL: ${INFO_KINEGRAM_URL:-http://localhost:8081}
+        PUBLIC_BUBBLES_URL: ${INFO_BUBBLES_URL:-http://localhost:8082}
+        PUBLIC_SHORTENER_URL: ${INFO_SHORTENER_URL:-https://3m4.net}
     ports:
-      - "8080:80"
+      - "${INFO_PROD_PORT:-8080}:80"
+    profiles: [info]
+
+  kinegram:
+    build:
+      context: ../kinegrama
+      args:
+        VITE_SITE_URL: ${KINEGRAM_SITE_URL:-http://localhost:8081}
+    ports:
+      - "${KINEGRAM_PROD_PORT:-8081}:80"
+    profiles: [kinegram]
+
+  bubbles:
+    build:
+      context: ../bubbles
+      args:
+        VITE_SITE_URL: ${BUBBLES_SITE_URL:-http://localhost:8082}
+    ports:
+      - "${BUBBLES_PROD_PORT:-8082}:80"
+    profiles: [bubbles]

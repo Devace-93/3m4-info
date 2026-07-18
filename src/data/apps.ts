@@ -10,33 +10,39 @@ export interface AppEntry {
   image?: string;
 }
 
+// App URLs come from env (PUBLIC_*) so orchestrated local runs can point the
+// cards at locally running apps; committed defaults are the production URLs.
+const KINEGRAM_URL = import.meta.env.PUBLIC_KINEGRAM_URL || 'https://kinegram.3m4.net';
+const BUBBLES_URL = import.meta.env.PUBLIC_BUBBLES_URL || 'https://bubbles.3m4.net';
+const SHORTENER_URL = import.meta.env.PUBLIC_SHORTENER_URL || 'https://3m4.net';
+
 // Add new apps here as they get published — each entry becomes a card,
 // grouped and ordered by `category` in the order categories first appear.
 export const apps: AppEntry[] = [
   {
     id: 'kinegram',
     name: 'Kinegram Generator',
-    url: 'https://kinegram.3m4.net',
+    url: KINEGRAM_URL,
     category: 'Tools & Generators',
     description:
       'Turn animated GIFs into print-ready kinegrams (scanimations) — the interlaced image and its barrier grid, generated together.',
     status: 'live',
-    image: 'https://kinegram.3m4.net/og-image.png',
+    image: `${KINEGRAM_URL}/og-image.png`,
   },
   {
     id: 'bubbles',
     name: 'Bubbles',
-    url: 'https://bubbles.3m4.net',
+    url: BUBBLES_URL,
     category: 'Games',
     description:
       'A fruit-popping arcade mini-game. Pop fruit, dodge vegetables, chain streaks — classic 2015 edition and a Phaser 3 remaster.',
     status: 'live',
-    image: 'https://bubbles.3m4.net/og/share.png',
+    image: `${BUBBLES_URL}/og/share.png`,
   },
   {
     id: 'shortener',
     name: '3m4',
-    url: 'https://3m4.net',
+    url: SHORTENER_URL,
     category: 'Tools & Generators',
     description:
       'Open-source URL shortener with real click analytics — geo/device/referrer breakdowns, custom domains, QR codes.',
