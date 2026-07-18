@@ -115,6 +115,8 @@ function overlayFor(id, app, mode) {
     }
   } else {
     env.VITE_SITE_URL = host(portOf(id, app, mode));
+    // Footer link back to the index — info always runs locally with us.
+    env.VITE_INFO_URL = host(portOf('info', registry.info, mode));
   }
   return env;
 }
@@ -182,6 +184,8 @@ function runProd() {
       ? `http://localhost:${portOf(oid, other, 'prod')}`
       : other.url;
   }
+  // Footer link back to the locally running index.
+  env.INFO_URL = `http://localhost:${portOf('info', registry.info, 'prod')}`;
   args.push('up', '--build');
   console.log(`docker ${args.join(' ')}`);
   const child = spawn('docker', args, { cwd: ROOT, env, stdio: 'inherit' });
