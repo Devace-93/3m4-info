@@ -26,6 +26,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script is:inline>
+      // Apply the saved theme override before first paint to avoid a flash.
+      const theme = localStorage.getItem('3m4.theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+    </script>
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
@@ -55,8 +60,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     color-scheme: dark;
   }
 
+  /* System preference, unless the user picked dark explicitly. */
   @media (prefers-color-scheme: light) {
-    :root {
+    :root:not([data-theme='dark']) {
       --bg: #f7f7fb;
       --surface: #ffffff;
       --surface-hover: #f0f0f8;
@@ -69,6 +75,21 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       --badge-building-text: #8a6a10;
       color-scheme: light;
     }
+  }
+
+  /* Explicit user choice (theme toggle) overrides the system preference. */
+  :root[data-theme='light'] {
+    --bg: #f7f7fb;
+    --surface: #ffffff;
+    --surface-hover: #f0f0f8;
+    --border: #e3e3ec;
+    --text: #1b1c22;
+    --text-dim: #5c6070;
+    --accent: #605dff;
+    --accent-text: #ffffff;
+    --badge-building-bg: #fdf1d6;
+    --badge-building-text: #8a6a10;
+    color-scheme: light;
   }
 
   * {

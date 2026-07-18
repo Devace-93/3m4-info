@@ -11,15 +11,25 @@ const grouped = categories.map((category) => ({
   apps: apps.filter((app) => app.category === category),
 }));
 
+// i18n keys (src/i18n/catalog.ts) for each category heading.
+const categoryKeys: Record<string, string> = {
+  'Tools & Generators': 'catTools',
+  Games: 'catGames',
+};
+
 const title = '3m4 — Apps index';
 const description = 'Index of apps and tools published under 3m4.net, grouped by category.';
 ---
 <Base title={title} description={description}>
   <main class="page">
     <header class="hero">
+      <div class="top-controls">
+        <button id="theme-toggle" type="button" aria-label="Theme">🌙</button>
+        <div id="lang-sel"></div>
+      </div>
       <p class="eyebrow">3m4.net</p>
-      <h1>Apps index</h1>
-      <p class="lede">
+      <h1 data-i18n="heading">Apps index</h1>
+      <p class="lede" data-i18n="lede">
         Small tools and games I've built and published under this domain. New ones get added
         here as they ship.
       </p>
@@ -28,7 +38,7 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
     {
       grouped.map(({ category, apps: categoryApps }) => (
         <section class="category">
-          <h2>{category}</h2>
+          <h2 data-i18n={categoryKeys[category]}>{category}</h2>
           <div class="grid">
             {categoryApps.map((app) => {
               const isLive = app.status === 'live';
@@ -48,11 +58,14 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
                   <div class="card-body">
                     <div class="card-top">
                       <h3>{app.name}</h3>
-                      <span class={`badge ${isLive ? 'badge-live' : 'badge-building'}`}>
+                      <span
+                        class={`badge ${isLive ? 'badge-live' : 'badge-building'}`}
+                        data-i18n={isLive ? 'live' : 'building'}
+                      >
                         {isLive ? 'Live' : 'Building'}
                       </span>
                     </div>
-                    <p>{app.description}</p>
+                    <p data-i18n={`${app.id}Desc`}>{app.description}</p>
                     {isLive && <span class="card-url">{app.url.replace('https://', '')} →</span>}
                   </div>
                 </Tag>
@@ -65,12 +78,19 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
 
     <footer>
       <p>
-        Made by{' '}
+        <span data-i18n="madeBy">Made by</span>{' '}
         <a href="https://www.linkedin.com/in/enrique-magallon/" target="_blank" rel="noopener noreferrer">Enrique Magallón</a>
       </p>
     </footer>
   </main>
 </Base>
+
+<script>
+  import { initI18n } from '../i18n';
+  import { initThemeToggle } from '../theme';
+  initI18n();
+  initThemeToggle();
+</script>
 
 <style>
   .page {
@@ -80,7 +100,35 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   }
 
   .hero {
+    position: relative;
     margin-bottom: 3rem;
+  }
+
+  .top-controls {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  #theme-toggle {
+    display: flex;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 6px 11px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+
+  #theme-toggle:hover {
+    background: var(--surface-hover);
+    border-color: var(--accent);
   }
 
   .eyebrow {

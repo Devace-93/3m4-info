@@ -1,4 +1,6 @@
 export interface AppEntry {
+  /** Stable slug used for i18n keys (`<id>Desc` in src/i18n/catalog.ts). */
+  id: string;
   name: string;
   url: string;
   category: string;
@@ -12,6 +14,7 @@ export interface AppEntry {
 // grouped and ordered by `category` in the order categories first appear.
 export const apps: AppEntry[] = [
   {
+    id: 'kinegram',
     name: 'Kinegram Generator',
     url: 'https://kinegram.3m4.net',
     category: 'Tools & Generators',
@@ -21,6 +24,7 @@ export const apps: AppEntry[] = [
     image: 'https://kinegram.3m4.net/og-image.png',
   },
   {
+    id: 'bubbles',
     name: 'Bubbles',
     url: 'https://bubbles.3m4.net',
     category: 'Games',
@@ -30,6 +34,7 @@ export const apps: AppEntry[] = [
     image: 'https://bubbles.3m4.net/og/share.png',
   },
   {
+    id: 'shortener',
     name: '3m4',
     url: 'https://3m4.net',
     category: 'Tools & Generators',
