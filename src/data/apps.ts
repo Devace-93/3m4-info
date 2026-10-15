@@ -45,7 +45,7 @@ export const apps: AppEntry[] = [
     url: SHORTENER_URL,
     category: 'Tools & Generators',
     description:
-      'Open-source URL shortener with real click analytics — geo/device/referrer breakdowns, custom domains, QR codes.',
-    status: 'building',
+      'Open-source URL shortener with real click analytics — geo/device/referrer breakdowns, QR codes, a public API and an MCP server for AI agents. Free during early access.',
+    status: 'live',
   },
 ];
