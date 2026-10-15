@@ -47,5 +47,6 @@ export const apps: AppEntry[] = [
     description:
       'Open-source URL shortener with real click analytics — geo/device/referrer breakdowns, QR codes, a public API and an MCP server for AI agents. Free during early access.',
     status: 'live',
+    image: `${SHORTENER_URL}/og-image.png`,
   },
 ];
