@@ -17,6 +17,7 @@ const BUBBLES_URL = import.meta.env.PUBLIC_BUBBLES_URL || 'https://bubbles.3m4.n
 const SHORTENER_URL = import.meta.env.PUBLIC_SHORTENER_URL || 'https://3m4.net';
 const SMART_DOCS_URL = import.meta.env.PUBLIC_SMART_DOCS_URL || 'https://smart-docs.3m4.net';
 const EXP_URL = import.meta.env.PUBLIC_EXP_URL || 'https://exp.3m4.net';
+const METRICS_URL = import.meta.env.PUBLIC_METRICS_URL || 'https://metrics.3m4.net';
 
 // Add new apps here as they get published — each entry becomes a card,
 // grouped and ordered by `category` in the order categories first appear.
@@ -68,5 +69,15 @@ export const apps: AppEntry[] = [
       'Open-source feature flags for projects, people and AI agents — per-environment toggles, percentage rollouts, copy flags between projects, a public API and an MCP server. Free during early access.',
     status: 'building',
     image: `${EXP_URL}/og-image.png`,
+  },
+  {
+    id: 'metrics',
+    name: 'metrics',
+    url: METRICS_URL,
+    category: 'Tools & Generators',
+    description:
+      'Open-source, privacy-friendly web analytics — page views, visitors, pages, referrers, countries, devices and custom events from one script tag, a pixel or an API call. No cookies, no stored IPs, and an MCP server for AI agents. Free during early access.',
+    status: 'building',
+    image: `${METRICS_URL}/og-image.png`,
   },
 ];
