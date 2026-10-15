@@ -10,6 +10,7 @@ services:
         PUBLIC_KINEGRAM_URL: ${INFO_KINEGRAM_URL:-http://localhost:8081}
         PUBLIC_BUBBLES_URL: ${INFO_BUBBLES_URL:-http://localhost:8082}
         PUBLIC_SHORTENER_URL: ${INFO_SHORTENER_URL:-https://3m4.net}
+        PUBLIC_SMART_DOCS_URL: ${INFO_SMART_DOCS_URL:-https://smart-docs.3m4.net}
     ports:
       - "${INFO_PROD_PORT:-8080}:80"
     profiles: [info]
