@@ -66,6 +66,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'A fruit-popping arcade mini-game. Pop fruit, dodge vegetables, chain streaks — classic 2015 edition and a Phaser 3 remaster.',
     shortenerDesc: 'Open-source URL shortener with real click analytics — geo/device/referrer breakdowns, custom domains, QR codes.',
     smartDocsDesc: 'Open-source knowledge base where people and AI agents are equal users. Markdown pages in projects, published as HTML, raw Markdown and llms.txt, with a REST API and an MCP server.',
+    expDesc: 'Open-source feature flags for projects, people and AI agents — per-environment toggles, percentage rollouts, copy flags between projects, a public API and an MCP server.',
     madeBy: 'Made by',
   },
   es: {
@@ -81,6 +82,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Mini-juego arcade de reventar frutas. Revienta frutas, esquiva verduras, encadena rachas — edición clásica 2015 y remaster en Phaser 3.',
     shortenerDesc: 'Acortador de URLs de código abierto con analíticas de clics reales: desglose por geografía, dispositivo y referencia, dominios propios y códigos QR.',
     smartDocsDesc: 'Base de conocimiento de código abierto donde personas y agentes de IA son usuarios en igualdad. Páginas Markdown en proyectos, publicadas como HTML, Markdown sin procesar y llms.txt, con una REST API y un servidor MCP.',
+    expDesc: 'Feature flags de código abierto para proyectos, personas y agentes de IA: interruptores por entorno, despliegues por porcentaje, copia de flags entre proyectos, API pública y servidor MCP.',
     madeBy: 'Hecho por',
   },
   fr: {
@@ -96,6 +98,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: "Mini-jeu d'arcade où l'on éclate des fruits. Éclatez les fruits, évitez les légumes, enchaînez les séries — édition classique 2015 et remaster Phaser 3.",
     shortenerDesc: "Raccourcisseur d'URL open source avec de vraies statistiques de clics — répartition par pays, appareil et référent, domaines personnalisés, codes QR.",
     smartDocsDesc: 'Base de connaissances open source où humains et agents IA sont des utilisateurs à égalité. Des pages Markdown organisées en projets, publiées en HTML, en Markdown brut et en llms.txt, avec une REST API et un serveur MCP.',
+    expDesc: 'Feature flags open source pour les projets, les personnes et les agents IA : interrupteurs par environnement, déploiements par pourcentage, copie de flags entre projets, API publique et serveur MCP.',
     madeBy: 'Créé par',
   },
   de: {
@@ -111,6 +114,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Ein Arcade-Minispiel zum Früchteplatzen. Früchte zerplatzen, Gemüse ausweichen, Serien aufbauen — klassische 2015er-Edition und Phaser-3-Remaster.',
     shortenerDesc: 'Open-Source-URL-Kürzer mit echten Klick-Analysen — Auswertung nach Land, Gerät und Referrer, eigene Domains, QR-Codes.',
     smartDocsDesc: 'Open-Source-Wissensdatenbank, in der Menschen und KI-Agenten gleichberechtigte Nutzer sind. Markdown-Seiten in Projekten, veröffentlicht als HTML, rohes Markdown und llms.txt, mit REST API und MCP-Server.',
+    expDesc: 'Open-Source-Feature-Flags für Projekte, Menschen und KI-Agenten: Schalter pro Umgebung, prozentuale Rollouts, Flags zwischen Projekten kopieren, öffentliche API und MCP-Server.',
     madeBy: 'Erstellt von',
   },
   it: {
@@ -126,6 +130,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Mini-gioco arcade di frutta da scoppiare. Scoppia la frutta, evita le verdure, concatena le serie — edizione classica 2015 e remaster in Phaser 3.',
     shortenerDesc: 'Accorciatore di URL open source con analisi reali dei clic — suddivisione per area geografica, dispositivo e referrer, domini personalizzati, codici QR.',
     smartDocsDesc: 'Base di conoscenza open source in cui persone e agenti IA sono utenti alla pari. Pagine Markdown organizzate in progetti, pubblicate come HTML, Markdown grezzo e llms.txt, con una REST API e un server MCP.',
+    expDesc: 'Feature flag open source per progetti, persone e agenti IA: interruttori per ambiente, rollout percentuali, copia dei flag tra progetti, API pubblica e server MCP.',
     madeBy: 'Creato da',
   },
   pt: {
@@ -141,6 +146,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Mini-jogo de arcade de estourar frutas. Estoure frutas, desvie de legumes, encadeie sequências — edição clássica de 2015 e remaster em Phaser 3.',
     shortenerDesc: 'Encurtador de URL de código aberto com análises reais de cliques — detalhamento por região, dispositivo e origem, domínios próprios, códigos QR.',
     smartDocsDesc: 'Base de conhecimento de código aberto em que pessoas e agentes de IA são usuários em pé de igualdade. Páginas Markdown em projetos, publicadas como HTML, Markdown bruto e llms.txt, com uma REST API e um servidor MCP.',
+    expDesc: 'Feature flags de código aberto para projetos, pessoas e agentes de IA: alternância por ambiente, lançamentos por porcentagem, cópia de flags entre projetos, API pública e servidor MCP.',
     madeBy: 'Feito por',
   },
   nl: {
@@ -156,6 +162,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Een arcade-minigame waarin je fruit laat knappen. Knap fruit, ontwijk groenten, bouw reeksen op — klassieke editie uit 2015 en een Phaser 3-remaster.',
     shortenerDesc: 'Open-source URL-verkorter met echte klikstatistieken — uitsplitsing naar locatie, apparaat en verwijzer, eigen domeinen, QR-codes.',
     smartDocsDesc: "Open-source kennisbank waarin mensen en AI-agents gelijkwaardige gebruikers zijn. Markdown-pagina's in projecten, gepubliceerd als HTML, ruwe Markdown en llms.txt, met een REST API en een MCP-server.",
+    expDesc: 'Open-source feature flags voor projecten, mensen en AI-agents: schakelaars per omgeving, procentuele uitrol, flags kopiëren tussen projecten, publieke API en MCP-server.',
     madeBy: 'Gemaakt door',
   },
   sv: {
@@ -171,6 +178,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Ett arkad-minispel där du spräcker frukt. Spräck frukt, undvik grönsaker, kedja ihop sviter — klassisk 2015-utgåva och en Phaser 3-remaster.',
     shortenerDesc: 'URL-förkortare med öppen källkod och riktig klickstatistik — uppdelning per plats, enhet och referent, egna domäner, QR-koder.',
     smartDocsDesc: 'Kunskapsbas med öppen källkod där människor och AI-agenter är jämlika användare. Markdown-sidor i projekt, publicerade som HTML, rå Markdown och llms.txt, med ett REST API och en MCP-server.',
+    expDesc: 'Feature flags med öppen källkod för projekt, människor och AI-agenter: växlar per miljö, procentuella utrullningar, kopiera flaggor mellan projekt, publikt API och MCP-server.',
     madeBy: 'Skapad av',
   },
   pl: {
@@ -186,6 +194,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Zręcznościowa minigra w pękanie owoców. Przebijaj owoce, unikaj warzyw, łącz serie — klasyczna edycja 2015 i remaster w Phaser 3.',
     shortenerDesc: 'Otwartoźródłowy skracacz URL z prawdziwą analityką kliknięć — podział według lokalizacji, urządzenia i źródła, własne domeny, kody QR.',
     smartDocsDesc: 'Otwartoźródłowa baza wiedzy, w której ludzie i agenci AI są równorzędnymi użytkownikami. Strony Markdown w projektach, publikowane jako HTML, surowy Markdown i llms.txt, z REST API i serwerem MCP.',
+    expDesc: 'Otwartoźródłowe feature flagi dla projektów, ludzi i agentów AI: przełączniki per środowisko, wdrożenia procentowe, kopiowanie flag między projektami, publiczne API i serwer MCP.',
     madeBy: 'Autor:',
   },
   cs: {
@@ -201,6 +210,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Arkádová minihra s praskáním ovoce. Praskejte ovoce, vyhýbejte se zelenině, řetězte série — klasická edice 2015 a remaster v Phaseru 3.',
     shortenerDesc: 'Open-source zkracovač URL se skutečnou analytikou kliknutí — rozpady podle polohy, zařízení a zdroje, vlastní domény, QR kódy.',
     smartDocsDesc: 'Open-source znalostní báze, kde jsou lidé a AI agenti rovnocennými uživateli. Stránky v Markdownu v projektech, publikované jako HTML, surový Markdown a llms.txt, s REST API a serverem MCP.',
+    expDesc: 'Open-source feature flagy pro projekty, lidi a AI agenty: přepínače pro každé prostředí, procentuální nasazení, kopírování flagů mezi projekty, veřejné API a MCP server.',
     madeBy: 'Vytvořil',
   },
   ro: {
@@ -216,6 +226,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Un mini-joc arcade cu fructe de spart. Sparge fructe, ferește-te de legume, înlănțuie serii — ediția clasică 2015 și un remaster în Phaser 3.',
     shortenerDesc: 'Scurtător de URL-uri open source cu analize reale ale clicurilor — defalcări pe locație, dispozitiv și referrer, domenii proprii, coduri QR.',
     smartDocsDesc: 'Bază de cunoștințe open source în care oamenii și agenții AI sunt utilizatori egali. Pagini Markdown în proiecte, publicate ca HTML, Markdown brut și llms.txt, cu un REST API și un server MCP.',
+    expDesc: 'Feature flags open source pentru proiecte, oameni și agenți AI: comutatoare per mediu, lansări procentuale, copierea flag-urilor între proiecte, API public și server MCP.',
     madeBy: 'Creat de',
   },
   el: {
@@ -231,6 +242,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Ένα arcade μίνι παιχνίδι με σκάσιμο φρούτων. Σκάστε φρούτα, αποφύγετε λαχανικά, χτίστε σερί — κλασική έκδοση 2015 και remaster σε Phaser 3.',
     shortenerDesc: 'Εργαλείο σύντμησης URL ανοιχτού κώδικα με πραγματικά αναλυτικά κλικ — ανάλυση ανά τοποθεσία, συσκευή και παραπομπή, προσαρμοσμένοι τομείς, κωδικοί QR.',
     smartDocsDesc: 'Βάση γνώσεων ανοιχτού κώδικα όπου άνθρωποι και πράκτορες AI είναι ισότιμοι χρήστες. Σελίδες Markdown σε έργα, δημοσιευμένες ως HTML, ακατέργαστο Markdown και llms.txt, με REST API και διακομιστή MCP.',
+    expDesc: 'Feature flags ανοικτού κώδικα για έργα, ανθρώπους και AI agents: διακόπτες ανά περιβάλλον, σταδιακή διάθεση με ποσοστά, αντιγραφή flags μεταξύ έργων, δημόσιο API και διακομιστής MCP.',
     madeBy: 'Φτιαγμένο από',
   },
   uk: {
@@ -246,6 +258,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Аркадна міні-гра з лусканням фруктів. Лускайте фрукти, уникайте овочів, збирайте серії — класичне видання 2015 року та ремастер на Phaser 3.',
     shortenerDesc: 'Скорочувач URL з відкритим кодом і справжньою аналітикою кліків — розподіл за геолокацією, пристроєм і джерелом, власні домени, QR-коди.',
     smartDocsDesc: 'База знань з відкритим кодом, де люди та AI-агенти є рівноправними користувачами. Сторінки Markdown у проєктах, опубліковані як HTML, чистий Markdown і llms.txt, з REST API та сервером MCP.',
+    expDesc: 'Feature flags з відкритим кодом для проєктів, людей і ШІ-агентів: перемикачі для кожного середовища, відсоткові розгортання, копіювання прапорців між проєктами, публічний API та MCP-сервер.',
     madeBy: 'Створив',
   },
   ru: {
@@ -261,6 +274,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Аркадная мини-игра с лопаньем фруктов. Лопайте фрукты, уклоняйтесь от овощей, собирайте серии — классическое издание 2015 года и ремастер на Phaser 3.',
     shortenerDesc: 'URL-сокращатель с открытым кодом и настоящей аналитикой кликов — разбивка по географии, устройству и источнику, свои домены, QR-коды.',
     smartDocsDesc: 'База знаний с открытым кодом, где люди и AI-агенты являются равноправными пользователями. Страницы Markdown в проектах, опубликованные как HTML, чистый Markdown и llms.txt, с REST API и сервером MCP.',
+    expDesc: 'Feature flags с открытым кодом для проектов, людей и ИИ-агентов: переключатели по окружениям, процентные раскатки, копирование флагов между проектами, публичный API и MCP-сервер.',
     madeBy: 'Сделал',
   },
   tr: {
@@ -276,6 +290,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Meyve patlatmalı bir arcade mini oyunu. Meyveleri patlat, sebzelerden kaç, serileri zincirle — klasik 2015 sürümü ve Phaser 3 remaster.',
     shortenerDesc: 'Gerçek tıklama analitiğine sahip açık kaynak URL kısaltıcı — konum/cihaz/kaynak dökümleri, özel alan adları, QR kodları.',
     smartDocsDesc: 'İnsanların ve yapay zeka ajanlarının eşit kullanıcı olduğu açık kaynak bilgi tabanı. Projelerdeki Markdown sayfaları HTML, ham Markdown ve llms.txt olarak yayımlanır; REST API ve MCP sunucusu bulunur.',
+    expDesc: 'Projeler, insanlar ve yapay zekâ ajanları için açık kaynak feature flag\'ler: ortam başına anahtarlar, yüzdelik dağıtımlar, projeler arası flag kopyalama, herkese açık API ve MCP sunucusu.',
     madeBy: 'Yapan:',
   },
   ar: {
@@ -291,6 +306,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'لعبة أركيد مصغّرة لفرقعة الفواكه. فرقع الفواكه، وتجنّب الخضروات، وواصل السلاسل — الإصدار الكلاسيكي 2015 وريماستر بمحرك Phaser 3.',
     shortenerDesc: 'مختصر روابط مفتوح المصدر مع تحليلات نقر حقيقية — تفصيل حسب الموقع والجهاز والمصدر، ونطاقات مخصصة، ورموز QR.',
     smartDocsDesc: 'قاعدة معرفة مفتوحة المصدر يكون فيها البشر ووكلاء الذكاء الاصطناعي مستخدمين متساوين. صفحات Markdown داخل المشاريع، تُنشر بصيغة HTML وMarkdown الخام وllms.txt، مع REST API وخادم MCP.',
+    expDesc: 'أعلام ميزات مفتوحة المصدر للمشاريع والأشخاص ووكلاء الذكاء الاصطناعي: مفاتيح لكل بيئة، طرح تدريجي بالنسبة المئوية، نسخ الأعلام بين المشاريع، واجهة API عامة وخادم MCP.',
     madeBy: 'صنعه',
   },
   hi: {
@@ -306,6 +322,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'फल फोड़ने वाला आर्केड मिनी-गेम। फल फोड़ें, सब्ज़ियों से बचें, स्ट्रीक जोड़ें — क्लासिक 2015 संस्करण और Phaser 3 रीमास्टर।',
     shortenerDesc: 'असली क्लिक एनालिटिक्स वाला ओपन-सोर्स URL शॉर्टनर — स्थान/डिवाइस/रेफ़रर विश्लेषण, कस्टम डोमेन, QR कोड।',
     smartDocsDesc: 'ओपन-सोर्स नॉलेज बेस जहाँ लोग और AI एजेंट बराबर के उपयोगकर्ता हैं। प्रोजेक्ट्स में Markdown पेज, जो HTML, कच्चे Markdown और llms.txt के रूप में प्रकाशित होते हैं, साथ में REST API और MCP सर्वर।',
+    expDesc: 'प्रोजेक्ट, लोगों और AI एजेंटों के लिए ओपन-सोर्स फ़ीचर फ़्लैग: हर एनवायरनमेंट के लिए टॉगल, प्रतिशत रोलआउट, प्रोजेक्ट के बीच फ़्लैग कॉपी, सार्वजनिक API और MCP सर्वर।',
     madeBy: 'निर्माता:',
   },
   zh: {
@@ -321,6 +338,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: '戳水果的街机小游戏。戳爆水果、躲开蔬菜、连击得分——含 2015 经典版和 Phaser 3 重制版。',
     shortenerDesc: '开源短链接服务，带真实点击分析——按地区/设备/来源细分，支持自定义域名和二维码。',
     smartDocsDesc: '开源知识库，人类和 AI 智能体都是平等的用户。项目中的 Markdown 页面可发布为 HTML、原始 Markdown 和 llms.txt，并提供 REST API 和 MCP 服务器。',
+    expDesc: '面向项目、人和 AI 代理的开源功能开关：按环境切换、百分比灰度发布、在项目之间复制开关、公开 API 和 MCP 服务器。',
     madeBy: '作者：',
   },
   ja: {
@@ -336,6 +354,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'フルーツを割るアーケードミニゲーム。フルーツを割り、野菜を避け、連鎖を繋ぐ — 2015年のクラシック版と Phaser 3 リマスター版。',
     shortenerDesc: '本物のクリック解析付きオープンソース短縮URLサービス — 地域・デバイス・参照元の内訳、独自ドメイン、QRコード対応。',
     smartDocsDesc: '人間とAIエージェントが対等なユーザーとなるオープンソースのナレッジベース。プロジェクト内のMarkdownページを、HTML、生のMarkdown、llms.txtとして公開でき、REST APIとMCPサーバーも備えています。',
+    expDesc: 'プロジェクト・人・AIエージェントのためのオープンソースのフィーチャーフラグ。環境ごとの切り替え、割合によるロールアウト、プロジェクト間のフラグのコピー、公開APIとMCPサーバー。',
     madeBy: '作者：',
   },
   ko: {
@@ -351,6 +370,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: '과일 터뜨리기 아케이드 미니게임. 과일을 터뜨리고, 채소를 피하고, 연속 콤보를 이어가세요 — 2015 클래식판과 Phaser 3 리마스터.',
     shortenerDesc: '실제 클릭 분석이 있는 오픈소스 URL 단축기 — 지역/기기/유입경로 분석, 커스텀 도메인, QR 코드.',
     smartDocsDesc: '사람과 AI 에이전트가 동등한 사용자인 오픈소스 지식 베이스. 프로젝트 안의 Markdown 페이지를 HTML, 원본 Markdown, llms.txt로 게시하며, REST API와 MCP 서버를 제공합니다.',
+    expDesc: '프로젝트, 사람, AI 에이전트를 위한 오픈소스 기능 플래그: 환경별 토글, 비율 기반 점진 배포, 프로젝트 간 플래그 복사, 공개 API와 MCP 서버.',
     madeBy: '제작:',
   },
   vi: {
@@ -366,6 +386,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Mini game arcade bắn trái cây. Bắn trái cây, né rau củ, nối chuỗi — bản cổ điển 2015 và bản remaster Phaser 3.',
     shortenerDesc: 'Trình rút gọn URL mã nguồn mở với phân tích lượt nhấp thực — thống kê theo vị trí, thiết bị, nguồn giới thiệu, tên miền tùy chỉnh, mã QR.',
     smartDocsDesc: 'Cơ sở tri thức mã nguồn mở, nơi con người và tác nhân AI là người dùng bình đẳng. Các trang Markdown trong dự án, được xuất bản dưới dạng HTML, Markdown thô và llms.txt, kèm REST API và máy chủ MCP.',
+    expDesc: 'Feature flag mã nguồn mở cho dự án, con người và tác nhân AI: bật/tắt theo môi trường, triển khai theo phần trăm, sao chép flag giữa các dự án, API công khai và máy chủ MCP.',
     madeBy: 'Tạo bởi',
   },
   id: {
@@ -381,6 +402,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'Mini game arkade meletuskan buah. Letuskan buah, hindari sayuran, rangkai streak — edisi klasik 2015 dan remaster Phaser 3.',
     shortenerDesc: 'Pemendek URL open source dengan analitik klik sungguhan — rincian lokasi/perangkat/perujuk, domain kustom, kode QR.',
     smartDocsDesc: 'Basis pengetahuan open source tempat manusia dan agen AI menjadi pengguna yang setara. Halaman Markdown dalam proyek, diterbitkan sebagai HTML, Markdown mentah, dan llms.txt, dengan REST API dan server MCP.',
+    expDesc: 'Feature flag sumber terbuka untuk proyek, orang, dan agen AI: sakelar per lingkungan, peluncuran bertahap berdasarkan persentase, salin flag antar proyek, API publik, dan server MCP.',
     madeBy: 'Dibuat oleh',
   },
   th: {
@@ -396,6 +418,7 @@ export const CATALOG: Record<string, Catalog> = {
     bubblesDesc: 'มินิเกมอาร์เคดเจาะผลไม้ เจาะผลไม้ หลบผัก ต่อสตรีค — ฉบับคลาสสิกปี 2015 และรีมาสเตอร์ด้วย Phaser 3',
     shortenerDesc: 'ตัวย่อ URL โอเพนซอร์สพร้อมสถิติคลิกจริง — แยกตามพื้นที่ อุปกรณ์ และแหล่งอ้างอิง โดเมนกำหนดเอง คิวอาร์โค้ด',
     smartDocsDesc: 'ฐานความรู้โอเพนซอร์สที่มนุษย์และเอเจนต์ AI เป็นผู้ใช้เท่าเทียมกัน หน้า Markdown ในโปรเจกต์ เผยแพร่เป็น HTML, Markdown ดิบ และ llms.txt พร้อม REST API และเซิร์ฟเวอร์ MCP',
+    expDesc: 'ฟีเจอร์แฟล็กโอเพนซอร์สสำหรับโปรเจกต์ ผู้คน และเอเจนต์ AI: สวิตช์แยกตามสภาพแวดล้อม การทยอยเปิดใช้ตามเปอร์เซ็นต์ คัดลอกแฟล็กข้ามโปรเจกต์ API สาธารณะ และเซิร์ฟเวอร์ MCP',
     madeBy: 'สร้างโดย',
   },
 

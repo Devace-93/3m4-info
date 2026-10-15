@@ -16,6 +16,7 @@ const KINEGRAM_URL = import.meta.env.PUBLIC_KINEGRAM_URL || 'https://kinegram.3m
 const BUBBLES_URL = import.meta.env.PUBLIC_BUBBLES_URL || 'https://bubbles.3m4.net';
 const SHORTENER_URL = import.meta.env.PUBLIC_SHORTENER_URL || 'https://3m4.net';
 const SMART_DOCS_URL = import.meta.env.PUBLIC_SMART_DOCS_URL || 'https://smart-docs.3m4.net';
+const EXP_URL = import.meta.env.PUBLIC_EXP_URL || 'https://exp.3m4.net';
 
 // Add new apps here as they get published — each entry becomes a card,
 // grouped and ordered by `category` in the order categories first appear.
@@ -59,5 +60,13 @@ export const apps: AppEntry[] = [
       'Open-source knowledge base where people and AI agents are equal users. Markdown pages in projects, published as HTML, raw Markdown and llms.txt, with a REST API and an MCP server.',
     status: 'live',
     image: `${SMART_DOCS_URL}/og-image.png`,
+    id: 'exp',
+    name: 'exp',
+    url: EXP_URL,
+    category: 'Tools & Generators',
+    description:
+      'Open-source feature flags for projects, people and AI agents — per-environment toggles, percentage rollouts, copy flags between projects, a public API and an MCP server. Free during early access.',
+    status: 'building',
+    image: `${EXP_URL}/og-image.png`,
   },
 ];
