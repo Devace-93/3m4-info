@@ -101,6 +101,7 @@ export const apps: AppEntry[] = [
     category: 'Tools & Generators',
     description:
       'Open-source error tracking for your apps — the browser SDK and the ingest API catch exceptions, group them into issues by fingerprint, show affected users, releases and environments with breadcrumbs, and let you triage from the dashboard, the API or an MCP server for AI agents. Free during early access.',
-    status: 'building',
+    status: 'live',
+    image: `${OOPS_URL}/og-image.png`,
   },
 ];
