@@ -68,6 +68,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Open-source user feedback for your apps — bug reports, feedback and feature requests through a drop-in widget or a public API, a public roadmap and changelog users can vote on, and an MCP server for AI agents.',
     smartDocsDesc: 'Open-source knowledge base where people and AI agents are equal users. Markdown pages in projects, published as HTML, raw Markdown and llms.txt, with a REST API and an MCP server.',
     expDesc: 'Open-source feature flags for projects, people and AI agents — per-environment toggles, percentage rollouts, copy flags between projects, a public API and an MCP server.',
+    metricsDesc: 'Open-source, privacy-friendly web analytics — page views, visitors, pages, referrers, countries, devices and custom events from one script tag, a pixel or an API call. No cookies, no stored IPs, and an MCP server for AI agents.',
     madeBy: 'Made by',
   },
   es: {
@@ -85,6 +86,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Feedback de usuarios de código abierto para tus apps: reportes de errores, opiniones y propuestas de funciones mediante un widget integrable o una API pública, un roadmap y changelog públicos con votos, y un servidor MCP para agentes de IA.',
     smartDocsDesc: 'Base de conocimiento de código abierto donde personas y agentes de IA son usuarios en igualdad. Páginas Markdown en proyectos, publicadas como HTML, Markdown sin procesar y llms.txt, con una REST API y un servidor MCP.',
     expDesc: 'Feature flags de código abierto para proyectos, personas y agentes de IA: interruptores por entorno, despliegues por porcentaje, copia de flags entre proyectos, API pública y servidor MCP.',
+    metricsDesc: 'Analítica web de código abierto y respetuosa con la privacidad: vistas de página, visitantes, páginas, referentes, países, dispositivos y eventos personalizados desde una etiqueta script, un píxel o una llamada a la API. Sin cookies, sin IPs almacenadas y con un servidor MCP para agentes de IA.',
     madeBy: 'Hecho por',
   },
   fr: {
@@ -102,6 +104,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Retours utilisateurs open source pour vos apps : rapports de bugs, avis et demandes de fonctionnalités via un widget intégrable ou une API publique, une roadmap et un changelog publics avec votes, et un serveur MCP pour les agents IA.',
     smartDocsDesc: 'Base de connaissances open source où humains et agents IA sont des utilisateurs à égalité. Des pages Markdown organisées en projets, publiées en HTML, en Markdown brut et en llms.txt, avec une REST API et un serveur MCP.',
     expDesc: 'Feature flags open source pour les projets, les personnes et les agents IA : interrupteurs par environnement, déploiements par pourcentage, copie de flags entre projets, API publique et serveur MCP.',
+    metricsDesc: 'Analytique web open source et respectueuse de la vie privée : pages vues, visiteurs, pages, référents, pays, appareils et événements personnalisés depuis une balise script, un pixel ou un appel API. Sans cookies, sans IP stockées, avec un serveur MCP pour les agents IA.',
     madeBy: 'Créé par',
   },
   de: {
@@ -119,6 +122,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Open-Source-Nutzerfeedback für deine Apps: Fehlerberichte, Feedback und Feature-Wünsche über ein einbettbares Widget oder eine öffentliche API, öffentliche Roadmap und Changelog mit Abstimmung sowie ein MCP-Server für KI-Agenten.',
     smartDocsDesc: 'Open-Source-Wissensdatenbank, in der Menschen und KI-Agenten gleichberechtigte Nutzer sind. Markdown-Seiten in Projekten, veröffentlicht als HTML, rohes Markdown und llms.txt, mit REST API und MCP-Server.',
     expDesc: 'Open-Source-Feature-Flags für Projekte, Menschen und KI-Agenten: Schalter pro Umgebung, prozentuale Rollouts, Flags zwischen Projekten kopieren, öffentliche API und MCP-Server.',
+    metricsDesc: 'Open-Source-Webanalyse mit Datenschutz: Seitenaufrufe, Besucher, Seiten, Referrer, Länder, Geräte und eigene Events über ein Script-Tag, ein Pixel oder einen API-Aufruf. Keine Cookies, keine gespeicherten IPs und ein MCP-Server für KI-Agenten.',
     madeBy: 'Erstellt von',
   },
   it: {
@@ -136,6 +140,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Feedback degli utenti open source per le tue app: segnalazioni di bug, opinioni e richieste di funzionalità tramite un widget integrabile o un\'API pubblica, roadmap e changelog pubblici con votazioni e un server MCP per agenti IA.',
     smartDocsDesc: 'Base di conoscenza open source in cui persone e agenti IA sono utenti alla pari. Pagine Markdown organizzate in progetti, pubblicate come HTML, Markdown grezzo e llms.txt, con una REST API e un server MCP.',
     expDesc: 'Feature flag open source per progetti, persone e agenti IA: interruttori per ambiente, rollout percentuali, copia dei flag tra progetti, API pubblica e server MCP.',
+    metricsDesc: 'Analisi web open source e rispettosa della privacy: visualizzazioni, visitatori, pagine, referrer, paesi, dispositivi ed eventi personalizzati da un tag script, un pixel o una chiamata API. Niente cookie, nessun IP memorizzato e un server MCP per agenti IA.',
     madeBy: 'Creato da',
   },
   pt: {
@@ -153,6 +158,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Feedback de usuários de código aberto para seus apps: relatos de bugs, opiniões e pedidos de recursos por meio de um widget embutível ou de uma API pública, roadmap e changelog públicos com votos e um servidor MCP para agentes de IA.',
     smartDocsDesc: 'Base de conhecimento de código aberto em que pessoas e agentes de IA são usuários em pé de igualdade. Páginas Markdown em projetos, publicadas como HTML, Markdown bruto e llms.txt, com uma REST API e um servidor MCP.',
     expDesc: 'Feature flags de código aberto para projetos, pessoas e agentes de IA: alternância por ambiente, lançamentos por porcentagem, cópia de flags entre projetos, API pública e servidor MCP.',
+    metricsDesc: 'Análise web de código aberto e amigável à privacidade: visualizações, visitantes, páginas, origens, países, dispositivos e eventos personalizados a partir de uma tag script, um pixel ou uma chamada de API. Sem cookies, sem IPs armazenados e com um servidor MCP para agentes de IA.',
     madeBy: 'Feito por',
   },
   nl: {
@@ -170,6 +176,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Open-source gebruikersfeedback voor je apps: bugmeldingen, feedback en featureverzoeken via een insluitbare widget of een publieke API, een publieke roadmap en changelog waarop gestemd kan worden, en een MCP-server voor AI-agents.',
     smartDocsDesc: "Open-source kennisbank waarin mensen en AI-agents gelijkwaardige gebruikers zijn. Markdown-pagina's in projecten, gepubliceerd als HTML, ruwe Markdown en llms.txt, met een REST API en een MCP-server.",
     expDesc: 'Open-source feature flags voor projecten, mensen en AI-agents: schakelaars per omgeving, procentuele uitrol, flags kopiëren tussen projecten, publieke API en MCP-server.',
+    metricsDesc: 'Open-source, privacyvriendelijke webanalyse: paginaweergaven, bezoekers, pagina\'s, verwijzers, landen, apparaten en eigen events via één scripttag, een pixel of een API-aanroep. Geen cookies, geen opgeslagen IP-adressen en een MCP-server voor AI-agents.',
     madeBy: 'Gemaakt door',
   },
   sv: {
@@ -187,6 +194,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Användarfeedback med öppen källkod för dina appar: buggrapporter, synpunkter och funktionsönskemål via en inbäddningsbar widget eller ett publikt API, publik roadmap och changelog med röstning samt en MCP-server för AI-agenter.',
     smartDocsDesc: 'Kunskapsbas med öppen källkod där människor och AI-agenter är jämlika användare. Markdown-sidor i projekt, publicerade som HTML, rå Markdown och llms.txt, med ett REST API och en MCP-server.',
     expDesc: 'Feature flags med öppen källkod för projekt, människor och AI-agenter: växlar per miljö, procentuella utrullningar, kopiera flaggor mellan projekt, publikt API och MCP-server.',
+    metricsDesc: 'Integritetsvänlig webbanalys med öppen källkod: sidvisningar, besökare, sidor, referenter, länder, enheter och egna händelser från en script-tagg, en pixel eller ett API-anrop. Inga cookies, inga lagrade IP-adresser och en MCP-server för AI-agenter.',
     madeBy: 'Skapad av',
   },
   pl: {
@@ -204,6 +212,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Otwartoźródłowe opinie użytkowników dla twoich aplikacji: zgłoszenia błędów, opinie i propozycje funkcji przez osadzany widget lub publiczne API, publiczna roadmapa i changelog z głosowaniem oraz serwer MCP dla agentów AI.',
     smartDocsDesc: 'Otwartoźródłowa baza wiedzy, w której ludzie i agenci AI są równorzędnymi użytkownikami. Strony Markdown w projektach, publikowane jako HTML, surowy Markdown i llms.txt, z REST API i serwerem MCP.',
     expDesc: 'Otwartoźródłowe feature flagi dla projektów, ludzi i agentów AI: przełączniki per środowisko, wdrożenia procentowe, kopiowanie flag między projektami, publiczne API i serwer MCP.',
+    metricsDesc: 'Otwartoźródłowa analityka WWW przyjazna prywatności: odsłony, odwiedzający, strony, źródła, kraje, urządzenia i własne zdarzenia z jednego tagu script, piksela lub wywołania API. Bez ciasteczek, bez zapisywania IP, z serwerem MCP dla agentów AI.',
     madeBy: 'Autor:',
   },
   cs: {
@@ -221,6 +230,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Open-source zpětná vazba od uživatelů pro tvé aplikace: hlášení chyb, názory a návrhy funkcí přes vložitelný widget nebo veřejné API, veřejná roadmapa a changelog s hlasováním a MCP server pro AI agenty.',
     smartDocsDesc: 'Open-source znalostní báze, kde jsou lidé a AI agenti rovnocennými uživateli. Stránky v Markdownu v projektech, publikované jako HTML, surový Markdown a llms.txt, s REST API a serverem MCP.',
     expDesc: 'Open-source feature flagy pro projekty, lidi a AI agenty: přepínače pro každé prostředí, procentuální nasazení, kopírování flagů mezi projekty, veřejné API a MCP server.',
+    metricsDesc: 'Open-source webová analytika šetrná k soukromí: zobrazení stránek, návštěvníci, stránky, zdroje, země, zařízení a vlastní události z jednoho tagu script, pixelu nebo volání API. Bez cookies, bez ukládání IP a s MCP serverem pro AI agenty.',
     madeBy: 'Vytvořil',
   },
   ro: {
@@ -238,6 +248,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Feedback de la utilizatori open source pentru aplicațiile tale: rapoarte de erori, păreri și cereri de funcționalități printr-un widget integrabil sau un API public, roadmap și changelog publice cu voturi și un server MCP pentru agenți AI.',
     smartDocsDesc: 'Bază de cunoștințe open source în care oamenii și agenții AI sunt utilizatori egali. Pagini Markdown în proiecte, publicate ca HTML, Markdown brut și llms.txt, cu un REST API și un server MCP.',
     expDesc: 'Feature flags open source pentru proiecte, oameni și agenți AI: comutatoare per mediu, lansări procentuale, copierea flag-urilor între proiecte, API public și server MCP.',
+    metricsDesc: 'Analiză web open source, prietenoasă cu confidențialitatea: afișări, vizitatori, pagini, referreri, țări, dispozitive și evenimente personalizate dintr-un tag script, un pixel sau un apel API. Fără cookie-uri, fără IP-uri stocate și cu un server MCP pentru agenți AI.',
     madeBy: 'Creat de',
   },
   el: {
@@ -255,6 +266,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Σχόλια χρηστών ανοικτού κώδικα για τις εφαρμογές σου: αναφορές σφαλμάτων, σχόλια και αιτήματα λειτουργιών μέσω ενσωματώσιμου widget ή δημόσιου API, δημόσιο roadmap και changelog με ψηφοφορία, και διακομιστής MCP για AI agents.',
     smartDocsDesc: 'Βάση γνώσεων ανοιχτού κώδικα όπου άνθρωποι και πράκτορες AI είναι ισότιμοι χρήστες. Σελίδες Markdown σε έργα, δημοσιευμένες ως HTML, ακατέργαστο Markdown και llms.txt, με REST API και διακομιστή MCP.',
     expDesc: 'Feature flags ανοικτού κώδικα για έργα, ανθρώπους και AI agents: διακόπτες ανά περιβάλλον, σταδιακή διάθεση με ποσοστά, αντιγραφή flags μεταξύ έργων, δημόσιο API και διακομιστής MCP.',
+    metricsDesc: 'Ανάλυση ιστού ανοικτού κώδικα με σεβασμό στην ιδιωτικότητα: προβολές σελίδων, επισκέπτες, σελίδες, παραπομπές, χώρες, συσκευές και προσαρμοσμένα συμβάντα από ένα script tag, ένα pixel ή μια κλήση API. Χωρίς cookies, χωρίς αποθήκευση IP και με διακομιστή MCP για AI agents.',
     madeBy: 'Φτιαγμένο από',
   },
   uk: {
@@ -272,6 +284,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Відгуки користувачів з відкритим кодом для твоїх застосунків: звіти про помилки, відгуки та запити функцій через вбудовуваний віджет або публічний API, публічні roadmap і changelog з голосуванням та MCP-сервер для ШІ-агентів.',
     smartDocsDesc: 'База знань з відкритим кодом, де люди та AI-агенти є рівноправними користувачами. Сторінки Markdown у проєктах, опубліковані як HTML, чистий Markdown і llms.txt, з REST API та сервером MCP.',
     expDesc: 'Feature flags з відкритим кодом для проєктів, людей і ШІ-агентів: перемикачі для кожного середовища, відсоткові розгортання, копіювання прапорців між проєктами, публічний API та MCP-сервер.',
+    metricsDesc: 'Веб-аналітика з відкритим кодом і повагою до приватності: перегляди сторінок, відвідувачі, сторінки, джерела, країни, пристрої та власні події з одного тегу script, пікселя або виклику API. Без cookie, без збереження IP, з MCP-сервером для ШІ-агентів.',
     madeBy: 'Створив',
   },
   ru: {
@@ -289,6 +302,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Отзывы пользователей с открытым кодом для ваших приложений: сообщения об ошибках, отзывы и запросы функций через встраиваемый виджет или публичный API, публичные roadmap и changelog с голосованием и MCP-сервер для ИИ-агентов.',
     smartDocsDesc: 'База знаний с открытым кодом, где люди и AI-агенты являются равноправными пользователями. Страницы Markdown в проектах, опубликованные как HTML, чистый Markdown и llms.txt, с REST API и сервером MCP.',
     expDesc: 'Feature flags с открытым кодом для проектов, людей и ИИ-агентов: переключатели по окружениям, процентные раскатки, копирование флагов между проектами, публичный API и MCP-сервер.',
+    metricsDesc: 'Веб-аналитика с открытым кодом и уважением к приватности: просмотры страниц, посетители, страницы, источники, страны, устройства и свои события из одного тега script, пикселя или вызова API. Без cookie, без хранения IP, с MCP-сервером для ИИ-агентов.',
     madeBy: 'Сделал',
   },
   tr: {
@@ -306,6 +320,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Uygulamalarınız için açık kaynak kullanıcı geri bildirimi: gömülebilir bir widget veya herkese açık API ile hata raporları, geri bildirimler ve özellik istekleri, oy verilebilen açık yol haritası ve değişiklik günlüğü, yapay zekâ ajanları için MCP sunucusu.',
     smartDocsDesc: 'İnsanların ve yapay zeka ajanlarının eşit kullanıcı olduğu açık kaynak bilgi tabanı. Projelerdeki Markdown sayfaları HTML, ham Markdown ve llms.txt olarak yayımlanır; REST API ve MCP sunucusu bulunur.',
     expDesc: 'Projeler, insanlar ve yapay zekâ ajanları için açık kaynak feature flag\'ler: ortam başına anahtarlar, yüzdelik dağıtımlar, projeler arası flag kopyalama, herkese açık API ve MCP sunucusu.',
+    metricsDesc: 'Gizliliğe saygılı açık kaynak web analitiği: tek bir script etiketi, piksel veya API çağrısıyla sayfa görüntüleme, ziyaretçi, sayfa, yönlendiren, ülke, cihaz ve özel olaylar. Çerez yok, IP saklanmıyor ve yapay zekâ ajanları için MCP sunucusu.',
     madeBy: 'Yapan:',
   },
   ar: {
@@ -323,6 +338,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'تعليقات مستخدمين مفتوحة المصدر لتطبيقاتك: بلاغات الأخطاء والآراء وطلبات الميزات عبر ودجة قابلة للتضمين أو واجهة API عامة، وخارطة طريق وسجل تغييرات عامان مع تصويت، وخادم MCP لوكلاء الذكاء الاصطناعي.',
     smartDocsDesc: 'قاعدة معرفة مفتوحة المصدر يكون فيها البشر ووكلاء الذكاء الاصطناعي مستخدمين متساوين. صفحات Markdown داخل المشاريع، تُنشر بصيغة HTML وMarkdown الخام وllms.txt، مع REST API وخادم MCP.',
     expDesc: 'أعلام ميزات مفتوحة المصدر للمشاريع والأشخاص ووكلاء الذكاء الاصطناعي: مفاتيح لكل بيئة، طرح تدريجي بالنسبة المئوية، نسخ الأعلام بين المشاريع، واجهة API عامة وخادم MCP.',
+    metricsDesc: 'تحليلات ويب مفتوحة المصدر تحترم الخصوصية: مشاهدات الصفحات والزوار والصفحات والمصادر والدول والأجهزة والأحداث المخصصة من وسم script واحد أو بكسل أو استدعاء API. بلا ملفات تعريف ارتباط، بلا تخزين لعناوين IP، ومع خادم MCP لوكلاء الذكاء الاصطناعي.',
     madeBy: 'صنعه',
   },
   hi: {
@@ -340,6 +356,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'आपके ऐप्स के लिए ओपन-सोर्स यूज़र फ़ीडबैक: एम्बेड करने योग्य विजेट या सार्वजनिक API से बग रिपोर्ट, फ़ीडबैक और फ़ीचर अनुरोध, वोट के साथ सार्वजनिक रोडमैप और चेंजलॉग, और AI एजेंटों के लिए MCP सर्वर।',
     smartDocsDesc: 'ओपन-सोर्स नॉलेज बेस जहाँ लोग और AI एजेंट बराबर के उपयोगकर्ता हैं। प्रोजेक्ट्स में Markdown पेज, जो HTML, कच्चे Markdown और llms.txt के रूप में प्रकाशित होते हैं, साथ में REST API और MCP सर्वर।',
     expDesc: 'प्रोजेक्ट, लोगों और AI एजेंटों के लिए ओपन-सोर्स फ़ीचर फ़्लैग: हर एनवायरनमेंट के लिए टॉगल, प्रतिशत रोलआउट, प्रोजेक्ट के बीच फ़्लैग कॉपी, सार्वजनिक API और MCP सर्वर।',
+    metricsDesc: 'ओपन-सोर्स, निजता-अनुकूल वेब एनालिटिक्स: एक स्क्रिप्ट टैग, पिक्सेल या API कॉल से पेज व्यू, विज़िटर, पेज, रेफ़रर, देश, डिवाइस और कस्टम इवेंट। न कुकीज़, न IP संग्रह, और AI एजेंटों के लिए MCP सर्वर।',
     madeBy: 'निर्माता:',
   },
   zh: {
@@ -357,6 +374,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: '面向你的应用的开源用户反馈：通过可嵌入组件或公开 API 收集缺陷报告、意见和功能需求，提供可投票的公开路线图和更新日志，以及面向 AI 代理的 MCP 服务器。',
     smartDocsDesc: '开源知识库，人类和 AI 智能体都是平等的用户。项目中的 Markdown 页面可发布为 HTML、原始 Markdown 和 llms.txt，并提供 REST API 和 MCP 服务器。',
     expDesc: '面向项目、人和 AI 代理的开源功能开关：按环境切换、百分比灰度发布、在项目之间复制开关、公开 API 和 MCP 服务器。',
+    metricsDesc: '开源、注重隐私的网站分析：通过一个 script 标签、一个像素或一次 API 调用获取页面浏览量、访客、页面、来源、国家、设备和自定义事件。无 Cookie，不存储 IP，并为 AI 代理提供 MCP 服务器。',
     madeBy: '作者：',
   },
   ja: {
@@ -374,6 +392,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'アプリ向けのオープンソースのユーザーフィードバック。埋め込みウィジェットまたは公開APIでバグ報告・感想・機能要望を受け付け、投票できる公開ロードマップと変更履歴、AIエージェント向けのMCPサーバーを提供。',
     smartDocsDesc: '人間とAIエージェントが対等なユーザーとなるオープンソースのナレッジベース。プロジェクト内のMarkdownページを、HTML、生のMarkdown、llms.txtとして公開でき、REST APIとMCPサーバーも備えています。',
     expDesc: 'プロジェクト・人・AIエージェントのためのオープンソースのフィーチャーフラグ。環境ごとの切り替え、割合によるロールアウト、プロジェクト間のフラグのコピー、公開APIとMCPサーバー。',
+    metricsDesc: 'オープンソースでプライバシーに配慮したウェブ解析。scriptタグ1つ、ピクセル、またはAPI呼び出しでページビュー・訪問者・ページ・参照元・国・デバイス・カスタムイベントを計測。Cookieなし、IPは保存せず、AIエージェント向けMCPサーバー付き。',
     madeBy: '作者：',
   },
   ko: {
@@ -391,6 +410,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: '앱을 위한 오픈소스 사용자 피드백: 삽입형 위젯이나 공개 API로 버그 신고, 의견, 기능 요청을 받고, 투표할 수 있는 공개 로드맵과 변경 기록, AI 에이전트용 MCP 서버를 제공합니다.',
     smartDocsDesc: '사람과 AI 에이전트가 동등한 사용자인 오픈소스 지식 베이스. 프로젝트 안의 Markdown 페이지를 HTML, 원본 Markdown, llms.txt로 게시하며, REST API와 MCP 서버를 제공합니다.',
     expDesc: '프로젝트, 사람, AI 에이전트를 위한 오픈소스 기능 플래그: 환경별 토글, 비율 기반 점진 배포, 프로젝트 간 플래그 복사, 공개 API와 MCP 서버.',
+    metricsDesc: '오픈소스 개인정보 친화적 웹 분석: script 태그 하나, 픽셀 또는 API 호출로 페이지뷰, 방문자, 페이지, 유입경로, 국가, 기기, 커스텀 이벤트를 집계합니다. 쿠키 없음, IP 미저장, AI 에이전트용 MCP 서버 제공.',
     madeBy: '제작:',
   },
   vi: {
@@ -408,6 +428,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Phản hồi người dùng mã nguồn mở cho ứng dụng của bạn: báo lỗi, góp ý và yêu cầu tính năng qua widget nhúng hoặc API công khai, lộ trình và nhật ký thay đổi công khai có bình chọn, cùng máy chủ MCP cho tác nhân AI.',
     smartDocsDesc: 'Cơ sở tri thức mã nguồn mở, nơi con người và tác nhân AI là người dùng bình đẳng. Các trang Markdown trong dự án, được xuất bản dưới dạng HTML, Markdown thô và llms.txt, kèm REST API và máy chủ MCP.',
     expDesc: 'Feature flag mã nguồn mở cho dự án, con người và tác nhân AI: bật/tắt theo môi trường, triển khai theo phần trăm, sao chép flag giữa các dự án, API công khai và máy chủ MCP.',
+    metricsDesc: 'Phân tích web mã nguồn mở, thân thiện với quyền riêng tư: lượt xem trang, khách truy cập, trang, nguồn giới thiệu, quốc gia, thiết bị và sự kiện tùy chỉnh từ một thẻ script, pixel hoặc lệnh gọi API. Không cookie, không lưu IP, kèm máy chủ MCP cho tác nhân AI.',
     madeBy: 'Tạo bởi',
   },
   id: {
@@ -425,6 +446,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'Umpan balik pengguna sumber terbuka untuk aplikasi Anda: laporan bug, masukan, dan permintaan fitur melalui widget yang dapat disematkan atau API publik, roadmap dan changelog publik yang bisa divoting, serta server MCP untuk agen AI.',
     smartDocsDesc: 'Basis pengetahuan open source tempat manusia dan agen AI menjadi pengguna yang setara. Halaman Markdown dalam proyek, diterbitkan sebagai HTML, Markdown mentah, dan llms.txt, dengan REST API dan server MCP.',
     expDesc: 'Feature flag sumber terbuka untuk proyek, orang, dan agen AI: sakelar per lingkungan, peluncuran bertahap berdasarkan persentase, salin flag antar proyek, API publik, dan server MCP.',
+    metricsDesc: 'Analitik web sumber terbuka yang ramah privasi: tampilan halaman, pengunjung, halaman, perujuk, negara, perangkat, dan event kustom dari satu tag script, piksel, atau panggilan API. Tanpa cookie, tanpa menyimpan IP, dan server MCP untuk agen AI.',
     madeBy: 'Dibuat oleh',
   },
   th: {
@@ -442,6 +464,7 @@ export const CATALOG: Record<string, Catalog> = {
     retroDesc: 'ความคิดเห็นจากผู้ใช้แบบโอเพนซอร์สสำหรับแอปของคุณ: รายงานบั๊ก ความคิดเห็น และคำขอฟีเจอร์ผ่านวิดเจ็ตฝังหรือ API สาธารณะ โรดแมปและบันทึกการเปลี่ยนแปลงสาธารณะที่โหวตได้ และเซิร์ฟเวอร์ MCP สำหรับเอเจนต์ AI',
     smartDocsDesc: 'ฐานความรู้โอเพนซอร์สที่มนุษย์และเอเจนต์ AI เป็นผู้ใช้เท่าเทียมกัน หน้า Markdown ในโปรเจกต์ เผยแพร่เป็น HTML, Markdown ดิบ และ llms.txt พร้อม REST API และเซิร์ฟเวอร์ MCP',
     expDesc: 'ฟีเจอร์แฟล็กโอเพนซอร์สสำหรับโปรเจกต์ ผู้คน และเอเจนต์ AI: สวิตช์แยกตามสภาพแวดล้อม การทยอยเปิดใช้ตามเปอร์เซ็นต์ คัดลอกแฟล็กข้ามโปรเจกต์ API สาธารณะ และเซิร์ฟเวอร์ MCP',
+    metricsDesc: 'เว็บแอนะลิติกส์โอเพนซอร์สที่เป็นมิตรกับความเป็นส่วนตัว: ยอดเข้าชม ผู้เยี่ยมชม หน้า แหล่งอ้างอิง ประเทศ อุปกรณ์ และอีเวนต์กำหนดเองจากแท็ก script เดียว พิกเซล หรือการเรียก API ไม่มีคุกกี้ ไม่เก็บ IP และมีเซิร์ฟเวอร์ MCP สำหรับเอเจนต์ AI',
     madeBy: 'สร้างโดย',
   },
 
