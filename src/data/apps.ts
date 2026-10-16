@@ -62,6 +62,8 @@ export const apps: AppEntry[] = [
       'Open-source user feedback for your apps — bug reports, feedback and feature requests through a drop-in widget or a public API, a public roadmap and changelog users can vote on, and an MCP server for AI agents. Free during early access.',
     status: 'live',
     image: `${RETRO_URL}/og-image.png`,
+  },
+  {
     id: 'smartDocs',
     name: 'Smart Docs',
     url: SMART_DOCS_URL,
@@ -70,13 +72,15 @@ export const apps: AppEntry[] = [
       'Open-source knowledge base where people and AI agents are equal users. Markdown pages in projects, published as HTML, raw Markdown and llms.txt, with a REST API and an MCP server.',
     status: 'live',
     image: `${SMART_DOCS_URL}/og-image.png`,
+  },
+  {
     id: 'exp',
     name: 'exp',
     url: EXP_URL,
     category: 'Tools & Generators',
     description:
       'Open-source feature flags for projects, people and AI agents — per-environment toggles, percentage rollouts, copy flags between projects, a public API and an MCP server. Free during early access.',
-    status: 'building',
+    status: 'live',
     image: `${EXP_URL}/og-image.png`,
   },
   {
