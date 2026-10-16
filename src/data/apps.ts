@@ -59,7 +59,7 @@ export const apps: AppEntry[] = [
     category: 'Tools & Generators',
     description:
       'Open-source user feedback for your apps — bug reports, feedback and feature requests through a drop-in widget or a public API, a public roadmap and changelog users can vote on, and an MCP server for AI agents. Free during early access.',
-    status: 'building',
+    status: 'live',
     image: `${RETRO_URL}/og-image.png`,
     id: 'smartDocs',
     name: 'Smart Docs',
