@@ -15,6 +15,7 @@ export interface AppEntry {
 const KINEGRAM_URL = import.meta.env.PUBLIC_KINEGRAM_URL || 'https://kinegram.3m4.net';
 const BUBBLES_URL = import.meta.env.PUBLIC_BUBBLES_URL || 'https://bubbles.3m4.net';
 const SHORTENER_URL = import.meta.env.PUBLIC_SHORTENER_URL || 'https://3m4.net';
+const RETRO_URL = import.meta.env.PUBLIC_RETRO_URL || 'https://retro.3m4.net';
 const SMART_DOCS_URL = import.meta.env.PUBLIC_SMART_DOCS_URL || 'https://smart-docs.3m4.net';
 const EXP_URL = import.meta.env.PUBLIC_EXP_URL || 'https://exp.3m4.net';
 
@@ -52,6 +53,14 @@ export const apps: AppEntry[] = [
     image: `${SHORTENER_URL}/og-image.png`,
   },
   {
+    id: 'retro',
+    name: 'retro',
+    url: RETRO_URL,
+    category: 'Tools & Generators',
+    description:
+      'Open-source user feedback for your apps — bug reports, feedback and feature requests through a drop-in widget or a public API, a public roadmap and changelog users can vote on, and an MCP server for AI agents. Free during early access.',
+    status: 'building',
+    image: `${RETRO_URL}/og-image.png`,
     id: 'smartDocs',
     name: 'Smart Docs',
     url: SMART_DOCS_URL,
