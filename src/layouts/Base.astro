@@ -39,6 +39,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       description,
     })} />
     <slot name="head" />
+    <!-- retro feedback widget (bug reports, feedback, feature requests). The
+         project key is public by design; it follows 3m4.theme / 3m4.lang. -->
+    <script is:inline src="https://retro.3m4.net/widget.js" data-project-key="retro_pub_7gbrksUtKRH4cX2d19mvPAiGa76aPItR" defer></script>
   </head>
   <body>
     <slot />
