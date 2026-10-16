@@ -19,6 +19,7 @@ const RETRO_URL = import.meta.env.PUBLIC_RETRO_URL || 'https://retro.3m4.net';
 const SMART_DOCS_URL = import.meta.env.PUBLIC_SMART_DOCS_URL || 'https://smart-docs.3m4.net';
 const EXP_URL = import.meta.env.PUBLIC_EXP_URL || 'https://exp.3m4.net';
 const METRICS_URL = import.meta.env.PUBLIC_METRICS_URL || 'https://metrics.3m4.net';
+const OOPS_URL = import.meta.env.PUBLIC_OOPS_URL || 'https://oops.3m4.net';
 
 // Add new apps here as they get published — each entry becomes a card,
 // grouped and ordered by `category` in the order categories first appear.
@@ -92,5 +93,14 @@ export const apps: AppEntry[] = [
       'Open-source, privacy-friendly web analytics — page views, visitors, pages, referrers, countries, devices and custom events from one script tag, a pixel or an API call. No cookies, no stored IPs, and an MCP server for AI agents. Free during early access.',
     status: 'live',
     image: `${METRICS_URL}/og-image.png`,
+  },
+  {
+    id: 'oops',
+    name: 'oops',
+    url: OOPS_URL,
+    category: 'Tools & Generators',
+    description:
+      'Open-source error tracking for your apps — the browser SDK and the ingest API catch exceptions, group them into issues by fingerprint, show affected users, releases and environments with breadcrumbs, and let you triage from the dashboard, the API or an MCP server for AI agents. Free during early access.',
+    status: 'building',
   },
 ];

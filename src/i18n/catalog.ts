@@ -69,6 +69,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Open-source knowledge base where people and AI agents are equal users. Markdown pages in projects, published as HTML, raw Markdown and llms.txt, with a REST API and an MCP server.',
     expDesc: 'Open-source feature flags for projects, people and AI agents — per-environment toggles, percentage rollouts, copy flags between projects, a public API and an MCP server.',
     metricsDesc: 'Open-source, privacy-friendly web analytics — page views, visitors, pages, referrers, countries, devices and custom events from one script tag, a pixel or an API call. No cookies, no stored IPs, and an MCP server for AI agents.',
+    oopsDesc: 'Open-source error tracking for your apps — the browser SDK and the ingest API catch exceptions, group them into issues by fingerprint, show affected users, releases and environments with breadcrumbs, and let you triage from the dashboard, the API or an MCP server for AI agents. Free during early access.',
     madeBy: 'Made by',
   },
   es: {
@@ -87,6 +88,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Base de conocimiento de código abierto donde personas y agentes de IA son usuarios en igualdad. Páginas Markdown en proyectos, publicadas como HTML, Markdown sin procesar y llms.txt, con una REST API y un servidor MCP.',
     expDesc: 'Feature flags de código abierto para proyectos, personas y agentes de IA: interruptores por entorno, despliegues por porcentaje, copia de flags entre proyectos, API pública y servidor MCP.',
     metricsDesc: 'Analítica web de código abierto y respetuosa con la privacidad: vistas de página, visitantes, páginas, referentes, países, dispositivos y eventos personalizados desde una etiqueta script, un píxel o una llamada a la API. Sin cookies, sin IPs almacenadas y con un servidor MCP para agentes de IA.',
+    oopsDesc: 'Seguimiento de errores de código abierto para tus apps: el SDK para navegador y la API de ingesta capturan las excepciones, las agrupan en incidencias por huella, muestran usuarios afectados, versiones y entornos con breadcrumbs, y permiten hacer triaje desde el panel, la API o un servidor MCP para agentes de IA. Gratis durante el acceso anticipado.',
     madeBy: 'Hecho por',
   },
   fr: {
@@ -105,6 +107,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Base de connaissances open source où humains et agents IA sont des utilisateurs à égalité. Des pages Markdown organisées en projets, publiées en HTML, en Markdown brut et en llms.txt, avec une REST API et un serveur MCP.',
     expDesc: 'Feature flags open source pour les projets, les personnes et les agents IA : interrupteurs par environnement, déploiements par pourcentage, copie de flags entre projets, API publique et serveur MCP.',
     metricsDesc: 'Analytique web open source et respectueuse de la vie privée : pages vues, visiteurs, pages, référents, pays, appareils et événements personnalisés depuis une balise script, un pixel ou un appel API. Sans cookies, sans IP stockées, avec un serveur MCP pour les agents IA.',
+    oopsDesc: 'Suivi des erreurs open source pour vos apps : le SDK navigateur et l’API d’ingestion capturent les exceptions, les regroupent en incidents par empreinte, affichent les utilisateurs touchés, les versions et les environnements avec des breadcrumbs, et permettent le triage depuis le tableau de bord, l’API ou un serveur MCP pour agents IA. Gratuit pendant l’accès anticipé.',
     madeBy: 'Créé par',
   },
   de: {
@@ -123,6 +126,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Open-Source-Wissensdatenbank, in der Menschen und KI-Agenten gleichberechtigte Nutzer sind. Markdown-Seiten in Projekten, veröffentlicht als HTML, rohes Markdown und llms.txt, mit REST API und MCP-Server.',
     expDesc: 'Open-Source-Feature-Flags für Projekte, Menschen und KI-Agenten: Schalter pro Umgebung, prozentuale Rollouts, Flags zwischen Projekten kopieren, öffentliche API und MCP-Server.',
     metricsDesc: 'Open-Source-Webanalyse mit Datenschutz: Seitenaufrufe, Besucher, Seiten, Referrer, Länder, Geräte und eigene Events über ein Script-Tag, ein Pixel oder einen API-Aufruf. Keine Cookies, keine gespeicherten IPs und ein MCP-Server für KI-Agenten.',
+    oopsDesc: 'Open-Source-Fehlertracking für deine Apps: Browser-SDK und Ingest-API fangen Exceptions ab, gruppieren sie per Fingerprint zu Issues, zeigen betroffene Nutzer, Releases und Umgebungen mit Breadcrumbs und erlauben die Triage im Dashboard, über die API oder einen MCP-Server für KI-Agenten. Kostenlos während des Early Access.',
     madeBy: 'Erstellt von',
   },
   it: {
@@ -141,6 +145,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Base di conoscenza open source in cui persone e agenti IA sono utenti alla pari. Pagine Markdown organizzate in progetti, pubblicate come HTML, Markdown grezzo e llms.txt, con una REST API e un server MCP.',
     expDesc: 'Feature flag open source per progetti, persone e agenti IA: interruttori per ambiente, rollout percentuali, copia dei flag tra progetti, API pubblica e server MCP.',
     metricsDesc: 'Analisi web open source e rispettosa della privacy: visualizzazioni, visitatori, pagine, referrer, paesi, dispositivi ed eventi personalizzati da un tag script, un pixel o una chiamata API. Niente cookie, nessun IP memorizzato e un server MCP per agenti IA.',
+    oopsDesc: 'Tracciamento degli errori open source per le tue app: l’SDK per browser e l’API di ingestione catturano le eccezioni, le raggruppano in issue per fingerprint, mostrano utenti colpiti, release e ambienti con breadcrumb, e permettono il triage dalla dashboard, dall’API o da un server MCP per agenti IA. Gratis durante l’accesso anticipato.',
     madeBy: 'Creato da',
   },
   pt: {
@@ -159,6 +164,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Base de conhecimento de código aberto em que pessoas e agentes de IA são usuários em pé de igualdade. Páginas Markdown em projetos, publicadas como HTML, Markdown bruto e llms.txt, com uma REST API e um servidor MCP.',
     expDesc: 'Feature flags de código aberto para projetos, pessoas e agentes de IA: alternância por ambiente, lançamentos por porcentagem, cópia de flags entre projetos, API pública e servidor MCP.',
     metricsDesc: 'Análise web de código aberto e amigável à privacidade: visualizações, visitantes, páginas, origens, países, dispositivos e eventos personalizados a partir de uma tag script, um pixel ou uma chamada de API. Sem cookies, sem IPs armazenados e com um servidor MCP para agentes de IA.',
+    oopsDesc: 'Rastreamento de erros open source para seus apps: o SDK para navegador e a API de ingestão capturam exceções, agrupam-nas em issues por fingerprint, mostram usuários afetados, releases e ambientes com breadcrumbs, e permitem a triagem pelo painel, pela API ou por um servidor MCP para agentes de IA. Grátis durante o acesso antecipado.',
     madeBy: 'Feito por',
   },
   nl: {
@@ -177,6 +183,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: "Open-source kennisbank waarin mensen en AI-agents gelijkwaardige gebruikers zijn. Markdown-pagina's in projecten, gepubliceerd als HTML, ruwe Markdown en llms.txt, met een REST API en een MCP-server.",
     expDesc: 'Open-source feature flags voor projecten, mensen en AI-agents: schakelaars per omgeving, procentuele uitrol, flags kopiëren tussen projecten, publieke API en MCP-server.',
     metricsDesc: 'Open-source, privacyvriendelijke webanalyse: paginaweergaven, bezoekers, pagina\'s, verwijzers, landen, apparaten en eigen events via één scripttag, een pixel of een API-aanroep. Geen cookies, geen opgeslagen IP-adressen en een MCP-server voor AI-agents.',
+    oopsDesc: 'Open-source foutregistratie voor je apps: de browser-SDK en de ingest-API vangen exceptions op, groeperen ze per fingerprint tot issues, tonen getroffen gebruikers, releases en omgevingen met breadcrumbs, en laten je triëren vanuit het dashboard, de API of een MCP-server voor AI-agents. Gratis tijdens early access.',
     madeBy: 'Gemaakt door',
   },
   sv: {
@@ -195,6 +202,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Kunskapsbas med öppen källkod där människor och AI-agenter är jämlika användare. Markdown-sidor i projekt, publicerade som HTML, rå Markdown och llms.txt, med ett REST API och en MCP-server.',
     expDesc: 'Feature flags med öppen källkod för projekt, människor och AI-agenter: växlar per miljö, procentuella utrullningar, kopiera flaggor mellan projekt, publikt API och MCP-server.',
     metricsDesc: 'Integritetsvänlig webbanalys med öppen källkod: sidvisningar, besökare, sidor, referenter, länder, enheter och egna händelser från en script-tagg, en pixel eller ett API-anrop. Inga cookies, inga lagrade IP-adresser och en MCP-server för AI-agenter.',
+    oopsDesc: 'Felspårning med öppen källkod för dina appar: webbläsar-SDK:n och ingest-API:et fångar undantag, grupperar dem i ärenden per fingeravtryck, visar drabbade användare, releaser och miljöer med breadcrumbs, och låter dig triagera från panelen, API:et eller en MCP-server för AI-agenter. Gratis under early access.',
     madeBy: 'Skapad av',
   },
   pl: {
@@ -213,6 +221,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Otwartoźródłowa baza wiedzy, w której ludzie i agenci AI są równorzędnymi użytkownikami. Strony Markdown w projektach, publikowane jako HTML, surowy Markdown i llms.txt, z REST API i serwerem MCP.',
     expDesc: 'Otwartoźródłowe feature flagi dla projektów, ludzi i agentów AI: przełączniki per środowisko, wdrożenia procentowe, kopiowanie flag między projektami, publiczne API i serwer MCP.',
     metricsDesc: 'Otwartoźródłowa analityka WWW przyjazna prywatności: odsłony, odwiedzający, strony, źródła, kraje, urządzenia i własne zdarzenia z jednego tagu script, piksela lub wywołania API. Bez ciasteczek, bez zapisywania IP, z serwerem MCP dla agentów AI.',
+    oopsDesc: 'Otwartoźródłowe śledzenie błędów w twoich aplikacjach: SDK przeglądarkowe i API ingest wychwytują wyjątki, grupują je w zgłoszenia według odcisku, pokazują dotkniętych użytkowników, wydania i środowiska z breadcrumbs oraz pozwalają na triage z panelu, API lub serwera MCP dla agentów AI. Bezpłatnie w okresie wczesnego dostępu.',
     madeBy: 'Autor:',
   },
   cs: {
@@ -231,6 +240,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Open-source znalostní báze, kde jsou lidé a AI agenti rovnocennými uživateli. Stránky v Markdownu v projektech, publikované jako HTML, surový Markdown a llms.txt, s REST API a serverem MCP.',
     expDesc: 'Open-source feature flagy pro projekty, lidi a AI agenty: přepínače pro každé prostředí, procentuální nasazení, kopírování flagů mezi projekty, veřejné API a MCP server.',
     metricsDesc: 'Open-source webová analytika šetrná k soukromí: zobrazení stránek, návštěvníci, stránky, zdroje, země, zařízení a vlastní události z jednoho tagu script, pixelu nebo volání API. Bez cookies, bez ukládání IP a s MCP serverem pro AI agenty.',
+    oopsDesc: 'Open-source sledování chyb pro vaše aplikace: SDK pro prohlížeč a ingest API zachytí výjimky, seskupí je podle otisku do issues, ukážou zasažené uživatele, verze a prostředí s breadcrumbs a umožní triáž z panelu, API nebo MCP serveru pro AI agenty. Zdarma během předběžného přístupu.',
     madeBy: 'Vytvořil',
   },
   ro: {
@@ -249,6 +259,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Bază de cunoștințe open source în care oamenii și agenții AI sunt utilizatori egali. Pagini Markdown în proiecte, publicate ca HTML, Markdown brut și llms.txt, cu un REST API și un server MCP.',
     expDesc: 'Feature flags open source pentru proiecte, oameni și agenți AI: comutatoare per mediu, lansări procentuale, copierea flag-urilor între proiecte, API public și server MCP.',
     metricsDesc: 'Analiză web open source, prietenoasă cu confidențialitatea: afișări, vizitatori, pagini, referreri, țări, dispozitive și evenimente personalizate dintr-un tag script, un pixel sau un apel API. Fără cookie-uri, fără IP-uri stocate și cu un server MCP pentru agenți AI.',
+    oopsDesc: 'Urmărire open source a erorilor pentru aplicațiile tale: SDK-ul pentru browser și API-ul de ingestie prind excepțiile, le grupează în issues după amprentă, arată utilizatorii afectați, versiunile și mediile cu breadcrumbs și permit triajul din panou, din API sau dintr-un server MCP pentru agenți AI. Gratuit în perioada de acces timpuriu.',
     madeBy: 'Creat de',
   },
   el: {
@@ -267,6 +278,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Βάση γνώσεων ανοιχτού κώδικα όπου άνθρωποι και πράκτορες AI είναι ισότιμοι χρήστες. Σελίδες Markdown σε έργα, δημοσιευμένες ως HTML, ακατέργαστο Markdown και llms.txt, με REST API και διακομιστή MCP.',
     expDesc: 'Feature flags ανοικτού κώδικα για έργα, ανθρώπους και AI agents: διακόπτες ανά περιβάλλον, σταδιακή διάθεση με ποσοστά, αντιγραφή flags μεταξύ έργων, δημόσιο API και διακομιστής MCP.',
     metricsDesc: 'Ανάλυση ιστού ανοικτού κώδικα με σεβασμό στην ιδιωτικότητα: προβολές σελίδων, επισκέπτες, σελίδες, παραπομπές, χώρες, συσκευές και προσαρμοσμένα συμβάντα από ένα script tag, ένα pixel ή μια κλήση API. Χωρίς cookies, χωρίς αποθήκευση IP και με διακομιστή MCP για AI agents.',
+    oopsDesc: 'Παρακολούθηση σφαλμάτων ανοιχτού κώδικα για τις εφαρμογές σου: το SDK για browser και το API εισαγωγής πιάνουν τις εξαιρέσεις, τις ομαδοποιούν σε ζητήματα ανά αποτύπωμα, δείχνουν επηρεασμένους χρήστες, εκδόσεις και περιβάλλοντα με breadcrumbs, και επιτρέπουν διαλογή από τον πίνακα, το API ή έναν MCP server για AI agents. Δωρεάν κατά την πρώιμη πρόσβαση.',
     madeBy: 'Φτιαγμένο από',
   },
   uk: {
@@ -285,6 +297,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'База знань з відкритим кодом, де люди та AI-агенти є рівноправними користувачами. Сторінки Markdown у проєктах, опубліковані як HTML, чистий Markdown і llms.txt, з REST API та сервером MCP.',
     expDesc: 'Feature flags з відкритим кодом для проєктів, людей і ШІ-агентів: перемикачі для кожного середовища, відсоткові розгортання, копіювання прапорців між проєктами, публічний API та MCP-сервер.',
     metricsDesc: 'Веб-аналітика з відкритим кодом і повагою до приватності: перегляди сторінок, відвідувачі, сторінки, джерела, країни, пристрої та власні події з одного тегу script, пікселя або виклику API. Без cookie, без збереження IP, з MCP-сервером для ШІ-агентів.',
+    oopsDesc: 'Відкрите відстеження помилок для ваших застосунків: браузерний SDK і API прийому ловлять винятки, групують їх у проблеми за відбитком, показують постраждалих користувачів, релізи та середовища з breadcrumbs і дозволяють тріаж з панелі, API або MCP-сервера для ШІ-агентів. Безкоштовно під час раннього доступу.',
     madeBy: 'Створив',
   },
   ru: {
@@ -303,6 +316,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'База знаний с открытым кодом, где люди и AI-агенты являются равноправными пользователями. Страницы Markdown в проектах, опубликованные как HTML, чистый Markdown и llms.txt, с REST API и сервером MCP.',
     expDesc: 'Feature flags с открытым кодом для проектов, людей и ИИ-агентов: переключатели по окружениям, процентные раскатки, копирование флагов между проектами, публичный API и MCP-сервер.',
     metricsDesc: 'Веб-аналитика с открытым кодом и уважением к приватности: просмотры страниц, посетители, страницы, источники, страны, устройства и свои события из одного тега script, пикселя или вызова API. Без cookie, без хранения IP, с MCP-сервером для ИИ-агентов.',
+    oopsDesc: 'Открытое отслеживание ошибок для ваших приложений: браузерный SDK и API приёма ловят исключения, группируют их в проблемы по отпечатку, показывают затронутых пользователей, релизы и окружения с breadcrumbs и позволяют делать триаж из панели, API или MCP-сервера для ИИ-агентов. Бесплатно в период раннего доступа.',
     madeBy: 'Сделал',
   },
   tr: {
@@ -321,6 +335,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'İnsanların ve yapay zeka ajanlarının eşit kullanıcı olduğu açık kaynak bilgi tabanı. Projelerdeki Markdown sayfaları HTML, ham Markdown ve llms.txt olarak yayımlanır; REST API ve MCP sunucusu bulunur.',
     expDesc: 'Projeler, insanlar ve yapay zekâ ajanları için açık kaynak feature flag\'ler: ortam başına anahtarlar, yüzdelik dağıtımlar, projeler arası flag kopyalama, herkese açık API ve MCP sunucusu.',
     metricsDesc: 'Gizliliğe saygılı açık kaynak web analitiği: tek bir script etiketi, piksel veya API çağrısıyla sayfa görüntüleme, ziyaretçi, sayfa, yönlendiren, ülke, cihaz ve özel olaylar. Çerez yok, IP saklanmıyor ve yapay zekâ ajanları için MCP sunucusu.',
+    oopsDesc: 'Uygulamalarınız için açık kaynak hata takibi: tarayıcı SDK’sı ve alım API’si istisnaları yakalar, parmak izine göre sorunlara gruplar, etkilenen kullanıcıları, sürümleri ve ortamları breadcrumb’larla gösterir ve panelden, API’den veya yapay zekâ ajanları için bir MCP sunucusundan triyaj yapmanıza izin verir. Erken erişim süresince ücretsiz.',
     madeBy: 'Yapan:',
   },
   ar: {
@@ -339,6 +354,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'قاعدة معرفة مفتوحة المصدر يكون فيها البشر ووكلاء الذكاء الاصطناعي مستخدمين متساوين. صفحات Markdown داخل المشاريع، تُنشر بصيغة HTML وMarkdown الخام وllms.txt، مع REST API وخادم MCP.',
     expDesc: 'أعلام ميزات مفتوحة المصدر للمشاريع والأشخاص ووكلاء الذكاء الاصطناعي: مفاتيح لكل بيئة، طرح تدريجي بالنسبة المئوية، نسخ الأعلام بين المشاريع، واجهة API عامة وخادم MCP.',
     metricsDesc: 'تحليلات ويب مفتوحة المصدر تحترم الخصوصية: مشاهدات الصفحات والزوار والصفحات والمصادر والدول والأجهزة والأحداث المخصصة من وسم script واحد أو بكسل أو استدعاء API. بلا ملفات تعريف ارتباط، بلا تخزين لعناوين IP، ومع خادم MCP لوكلاء الذكاء الاصطناعي.',
+    oopsDesc: 'تتبّع أخطاء مفتوح المصدر لتطبيقاتك: تلتقط حزمة SDK للمتصفح وواجهة الاستقبال الاستثناءات، وتجمعها في مشكلات حسب البصمة، وتعرض المستخدمين المتأثرين والإصدارات والبيئات مع مسارات التنقل، وتتيح الفرز من لوحة التحكم أو واجهة API أو خادم MCP لوكلاء الذكاء الاصطناعي. مجاني خلال فترة الوصول المبكر.',
     madeBy: 'صنعه',
   },
   hi: {
@@ -357,6 +373,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'ओपन-सोर्स नॉलेज बेस जहाँ लोग और AI एजेंट बराबर के उपयोगकर्ता हैं। प्रोजेक्ट्स में Markdown पेज, जो HTML, कच्चे Markdown और llms.txt के रूप में प्रकाशित होते हैं, साथ में REST API और MCP सर्वर।',
     expDesc: 'प्रोजेक्ट, लोगों और AI एजेंटों के लिए ओपन-सोर्स फ़ीचर फ़्लैग: हर एनवायरनमेंट के लिए टॉगल, प्रतिशत रोलआउट, प्रोजेक्ट के बीच फ़्लैग कॉपी, सार्वजनिक API और MCP सर्वर।',
     metricsDesc: 'ओपन-सोर्स, निजता-अनुकूल वेब एनालिटिक्स: एक स्क्रिप्ट टैग, पिक्सेल या API कॉल से पेज व्यू, विज़िटर, पेज, रेफ़रर, देश, डिवाइस और कस्टम इवेंट। न कुकीज़, न IP संग्रह, और AI एजेंटों के लिए MCP सर्वर।',
+    oopsDesc: 'आपके ऐप्स के लिए ओपन-सोर्स एरर ट्रैकिंग: ब्राउज़र SDK और इनजेस्ट API अपवादों को पकड़ते हैं, उन्हें फ़िंगरप्रिंट के अनुसार इश्यू में समूहित करते हैं, प्रभावित उपयोगकर्ता, रिलीज़ और एनवायरनमेंट ब्रेडक्रम्ब्स के साथ दिखाते हैं, और डैशबोर्ड, API या AI एजेंटों के लिए MCP सर्वर से ट्रायेज करने देते हैं। शुरुआती एक्सेस के दौरान मुफ़्त।',
     madeBy: 'निर्माता:',
   },
   zh: {
@@ -375,6 +392,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: '开源知识库，人类和 AI 智能体都是平等的用户。项目中的 Markdown 页面可发布为 HTML、原始 Markdown 和 llms.txt，并提供 REST API 和 MCP 服务器。',
     expDesc: '面向项目、人和 AI 代理的开源功能开关：按环境切换、百分比灰度发布、在项目之间复制开关、公开 API 和 MCP 服务器。',
     metricsDesc: '开源、注重隐私的网站分析：通过一个 script 标签、一个像素或一次 API 调用获取页面浏览量、访客、页面、来源、国家、设备和自定义事件。无 Cookie，不存储 IP，并为 AI 代理提供 MCP 服务器。',
+    oopsDesc: '面向你的应用的开源错误追踪：浏览器 SDK 和采集 API 捕获异常，按指纹归并为问题，展示受影响用户、版本与环境以及操作轨迹（breadcrumbs），并可通过控制台、API 或面向 AI 智能体的 MCP 服务器进行分级处理。抢先体验期间免费。',
     madeBy: '作者：',
   },
   ja: {
@@ -393,6 +411,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: '人間とAIエージェントが対等なユーザーとなるオープンソースのナレッジベース。プロジェクト内のMarkdownページを、HTML、生のMarkdown、llms.txtとして公開でき、REST APIとMCPサーバーも備えています。',
     expDesc: 'プロジェクト・人・AIエージェントのためのオープンソースのフィーチャーフラグ。環境ごとの切り替え、割合によるロールアウト、プロジェクト間のフラグのコピー、公開APIとMCPサーバー。',
     metricsDesc: 'オープンソースでプライバシーに配慮したウェブ解析。scriptタグ1つ、ピクセル、またはAPI呼び出しでページビュー・訪問者・ページ・参照元・国・デバイス・カスタムイベントを計測。Cookieなし、IPは保存せず、AIエージェント向けMCPサーバー付き。',
+    oopsDesc: 'アプリのためのオープンソースのエラートラッキング: ブラウザSDKと取り込みAPIが例外を捕捉し、フィンガープリントごとにissueへグループ化し、影響を受けたユーザー、リリース、環境をブレッドクラムとともに表示し、ダッシュボード、API、またはAIエージェント向けMCPサーバーからトリアージできます。早期アクセス期間中は無料。',
     madeBy: '作者：',
   },
   ko: {
@@ -411,6 +430,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: '사람과 AI 에이전트가 동등한 사용자인 오픈소스 지식 베이스. 프로젝트 안의 Markdown 페이지를 HTML, 원본 Markdown, llms.txt로 게시하며, REST API와 MCP 서버를 제공합니다.',
     expDesc: '프로젝트, 사람, AI 에이전트를 위한 오픈소스 기능 플래그: 환경별 토글, 비율 기반 점진 배포, 프로젝트 간 플래그 복사, 공개 API와 MCP 서버.',
     metricsDesc: '오픈소스 개인정보 친화적 웹 분석: script 태그 하나, 픽셀 또는 API 호출로 페이지뷰, 방문자, 페이지, 유입경로, 국가, 기기, 커스텀 이벤트를 집계합니다. 쿠키 없음, IP 미저장, AI 에이전트용 MCP 서버 제공.',
+    oopsDesc: '앱을 위한 오픈 소스 오류 추적: 브라우저 SDK와 수집 API가 예외를 잡아 핑거프린트별 이슈로 묶고, 영향을 받은 사용자, 릴리스, 환경을 브레드크럼과 함께 보여주며, 대시보드, API 또는 AI 에이전트용 MCP 서버에서 트리아지할 수 있습니다. 얼리 액세스 기간 동안 무료.',
     madeBy: '제작:',
   },
   vi: {
@@ -429,6 +449,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Cơ sở tri thức mã nguồn mở, nơi con người và tác nhân AI là người dùng bình đẳng. Các trang Markdown trong dự án, được xuất bản dưới dạng HTML, Markdown thô và llms.txt, kèm REST API và máy chủ MCP.',
     expDesc: 'Feature flag mã nguồn mở cho dự án, con người và tác nhân AI: bật/tắt theo môi trường, triển khai theo phần trăm, sao chép flag giữa các dự án, API công khai và máy chủ MCP.',
     metricsDesc: 'Phân tích web mã nguồn mở, thân thiện với quyền riêng tư: lượt xem trang, khách truy cập, trang, nguồn giới thiệu, quốc gia, thiết bị và sự kiện tùy chỉnh từ một thẻ script, pixel hoặc lệnh gọi API. Không cookie, không lưu IP, kèm máy chủ MCP cho tác nhân AI.',
+    oopsDesc: 'Theo dõi lỗi mã nguồn mở cho ứng dụng của bạn: SDK trình duyệt và API tiếp nhận bắt các ngoại lệ, nhóm chúng thành issue theo dấu vân tay, hiển thị người dùng bị ảnh hưởng, bản phát hành và môi trường cùng breadcrumbs, và cho phép phân loại từ bảng điều khiển, API hoặc máy chủ MCP dành cho tác nhân AI. Miễn phí trong giai đoạn truy cập sớm.',
     madeBy: 'Tạo bởi',
   },
   id: {
@@ -447,6 +468,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'Basis pengetahuan open source tempat manusia dan agen AI menjadi pengguna yang setara. Halaman Markdown dalam proyek, diterbitkan sebagai HTML, Markdown mentah, dan llms.txt, dengan REST API dan server MCP.',
     expDesc: 'Feature flag sumber terbuka untuk proyek, orang, dan agen AI: sakelar per lingkungan, peluncuran bertahap berdasarkan persentase, salin flag antar proyek, API publik, dan server MCP.',
     metricsDesc: 'Analitik web sumber terbuka yang ramah privasi: tampilan halaman, pengunjung, halaman, perujuk, negara, perangkat, dan event kustom dari satu tag script, piksel, atau panggilan API. Tanpa cookie, tanpa menyimpan IP, dan server MCP untuk agen AI.',
+    oopsDesc: 'Pelacakan error open source untuk aplikasi Anda: SDK browser dan API ingest menangkap exception, mengelompokkannya menjadi issue berdasarkan fingerprint, menampilkan pengguna yang terdampak, rilis dan environment dengan breadcrumbs, serta memungkinkan triase dari dasbor, API, atau server MCP untuk agen AI. Gratis selama akses awal.',
     madeBy: 'Dibuat oleh',
   },
   th: {
@@ -465,6 +487,7 @@ export const CATALOG: Record<string, Catalog> = {
     smartDocsDesc: 'ฐานความรู้โอเพนซอร์สที่มนุษย์และเอเจนต์ AI เป็นผู้ใช้เท่าเทียมกัน หน้า Markdown ในโปรเจกต์ เผยแพร่เป็น HTML, Markdown ดิบ และ llms.txt พร้อม REST API และเซิร์ฟเวอร์ MCP',
     expDesc: 'ฟีเจอร์แฟล็กโอเพนซอร์สสำหรับโปรเจกต์ ผู้คน และเอเจนต์ AI: สวิตช์แยกตามสภาพแวดล้อม การทยอยเปิดใช้ตามเปอร์เซ็นต์ คัดลอกแฟล็กข้ามโปรเจกต์ API สาธารณะ และเซิร์ฟเวอร์ MCP',
     metricsDesc: 'เว็บแอนะลิติกส์โอเพนซอร์สที่เป็นมิตรกับความเป็นส่วนตัว: ยอดเข้าชม ผู้เยี่ยมชม หน้า แหล่งอ้างอิง ประเทศ อุปกรณ์ และอีเวนต์กำหนดเองจากแท็ก script เดียว พิกเซล หรือการเรียก API ไม่มีคุกกี้ ไม่เก็บ IP และมีเซิร์ฟเวอร์ MCP สำหรับเอเจนต์ AI',
+    oopsDesc: 'การติดตามข้อผิดพลาดแบบโอเพนซอร์สสำหรับแอปของคุณ: SDK สำหรับเบราว์เซอร์และ API รับข้อมูลจะจับ exception จัดกลุ่มเป็น issue ตามลายนิ้วมือ แสดงผู้ใช้ที่ได้รับผลกระทบ รุ่นและสภาพแวดล้อมพร้อม breadcrumbs และให้คุณคัดแยกจากแดชบอร์ด API หรือเซิร์ฟเวอร์ MCP สำหรับเอเจนต์ AI ฟรีในช่วง early access',
     madeBy: 'สร้างโดย',
   },
 
