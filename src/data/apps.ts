@@ -90,7 +90,7 @@ export const apps: AppEntry[] = [
     category: 'Tools & Generators',
     description:
       'Open-source, privacy-friendly web analytics — page views, visitors, pages, referrers, countries, devices and custom events from one script tag, a pixel or an API call. No cookies, no stored IPs, and an MCP server for AI agents. Free during early access.',
-    status: 'building',
+    status: 'live',
     image: `${METRICS_URL}/og-image.png`,
   },
 ];
