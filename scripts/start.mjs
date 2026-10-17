@@ -133,6 +133,8 @@ function runDev() {
     let cmd = app.devCmd;
     if (id === 'bubbles-classic') {
       env.PORT = String(port); // legacy server reads PORT
+    } else if (app.portFlag === false) {
+      // Not a dev server (e.g. a docker compose stack): port fixed by the app.
     } else {
       // npm needs "--" before forwarded flags; bun forwards them directly.
       const sep = app.engine === 'npm' ? ' -- ' : ' ';
