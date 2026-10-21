@@ -19,11 +19,21 @@ const RETRO_URL = import.meta.env.PUBLIC_RETRO_URL || 'https://retro.3m4.net';
 const SMART_DOCS_URL = import.meta.env.PUBLIC_SMART_DOCS_URL || 'https://smart-docs.3m4.net';
 const EXP_URL = import.meta.env.PUBLIC_EXP_URL || 'https://exp.3m4.net';
 const METRICS_URL = import.meta.env.PUBLIC_METRICS_URL || 'https://metrics.3m4.net';
+const WARS_URL = import.meta.env.PUBLIC_WARS_URL || 'https://wars.3m4.net';
 const OOPS_URL = import.meta.env.PUBLIC_OOPS_URL || 'https://oops.3m4.net';
 
 // Add new apps here as they get published — each entry becomes a card,
 // grouped and ordered by `category` in the order categories first appear.
 export const apps: AppEntry[] = [
+  {
+    id: 'wars',
+    name: 'Wars',
+    url: 'https://github.com/Devace-93/wars',
+    category: 'Games',
+    description:
+      'An open-source real-time strategy game in the spirit of the classic age-advancing RTS: 13 civilisations, four ages, random maps, a scenario editor, computer players and online multiplayer. Desktop, console, Android and iOS clients share one deterministic engine written in Rust.',
+    status: 'building',
+  },
   {
     id: 'kinegram',
     name: 'Kinegram Generator',
