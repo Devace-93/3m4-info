@@ -37,3 +37,16 @@ apps:
     devPort: 8015
     devOnly: true
     startWith: bubbles
+  accounts:
+    # Identity / SSO service (accounts.3m4.net). A docker compose stack, not a
+    # Vite server: `make up` brings up api + worker + web + caddy on 8085 and
+    # takes no --port flag (portFlag: false). Not part of the local prod
+    # profiles yet (devOnly), so prod runs link to the production URL.
+    path: ../accounts
+    engine: make
+    devCmd: make up && make logs
+    devPort: 8085
+    portFlag: false
+    devOnly: true
+    urlVar: PUBLIC_ACCOUNTS_URL
+    url: https://accounts.3m4.net

@@ -20,6 +20,14 @@ npm run preview   # serve the build locally
 docker compose up --build   # → http://localhost:8080
 ```
 
+## Account section
+
+The header carries the `accounts.3m4.net` session widget (`session.js`) and the
+page has a "Your 3m4 account" section: **Log in** / **Sign up** when signed out,
+**Manage account** / **Log out** when a 3m4 session exists. One account works in
+every app listed. `PUBLIC_ACCOUNTS_URL` points it at a local accounts stack
+(`http://localhost:8085`) when developing.
+
 ## Adding an app
 
 Add an entry to [`src/data/apps.ts`](src/data/apps.ts):

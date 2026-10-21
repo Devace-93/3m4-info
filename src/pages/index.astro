@@ -17,6 +17,10 @@ const categoryKeys: Record<string, string> = {
   Games: 'catGames',
 };
 
+// Shared identity service: the header widget (session.js) and the account
+// section below link to it. Local runs point it at the accounts stack.
+const ACCOUNTS_URL = import.meta.env.PUBLIC_ACCOUNTS_URL || 'https://accounts.3m4.net';
+
 const title = '3m4 — Apps index';
 const description = 'Index of apps and tools published under 3m4.net, grouped by category.';
 ---
@@ -24,6 +28,9 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   <main class="page">
     <header class="hero">
       <div class="top-controls">
+        <!-- accounts.3m4.net session widget: Log in / Sign up, or avatar + menu
+             (Profile, Log out) once signed in. One account for every 3m4 app. -->
+        <div id="session" class="session-mount"></div>
         <button id="theme-toggle" type="button" aria-label="Theme">🌙</button>
         <div id="lang-sel"></div>
       </div>
@@ -34,6 +41,24 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
         here as they ship.
       </p>
     </header>
+
+    <section class="category account" id="account">
+      <h2 data-i18n="accountTitle">Your 3m4 account</h2>
+      <div class="account-card">
+        <p data-i18n="accountLede">
+          One login for every app listed here. Sign up once, then use the same account in the
+          shortener, metrics, retro, exp, smart-docs and bubbles.
+        </p>
+        <div class="account-actions" data-signed-out>
+          <a class="btn btn-primary" href={`${ACCOUNTS_URL}/login`} data-account-link="login" data-i18n="accountLogin">Log in</a>
+          <a class="btn" href={`${ACCOUNTS_URL}/signup`} data-account-link="signup" data-i18n="accountSignup">Sign up</a>
+        </div>
+        <div class="account-actions" data-signed-in hidden>
+          <a class="btn" href={`${ACCOUNTS_URL}/profile`} data-i18n="accountManage">Manage account</a>
+          <button class="btn" type="button" id="account-logout" data-i18n="accountLogout">Log out</button>
+        </div>
+      </div>
+    </section>
 
     {
       grouped.map(({ category, apps: categoryApps }) => (
@@ -85,11 +110,15 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   </main>
 </Base>
 
+<script is:inline src={`${ACCOUNTS_URL}/session.js`} data-mount="#session" defer></script>
+
 <script>
   import { initI18n } from '../i18n';
   import { initThemeToggle } from '../theme';
+  import { initAccountSection } from '../account';
   initI18n();
   initThemeToggle();
+  initAccountSection();
 </script>
 
 <style>
@@ -129,6 +158,66 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   #theme-toggle:hover {
     background: var(--surface-hover);
     border-color: var(--accent);
+  }
+
+  .session-mount:empty {
+    display: none;
+  }
+
+  .account-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem;
+  }
+
+  .account-card p {
+    margin: 0;
+    flex: 1 1 32ch;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+  }
+
+  .account-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* display: flex would beat the UA's [hidden] rule; keep the toggle working. */
+  .account-actions[hidden] {
+    display: none;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 0.45rem 1rem;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background: var(--surface-hover);
+    border-color: var(--accent);
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-text);
   }
 
   .eyebrow {
