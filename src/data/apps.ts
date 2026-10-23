@@ -33,6 +33,7 @@ export const apps: AppEntry[] = [
     description:
       'An open-source real-time strategy game in the spirit of the classic age-advancing RTS: 13 civilisations, four ages, random maps, a scenario editor, computer players and online multiplayer. Desktop, console, Android and iOS clients share one deterministic engine written in Rust.',
     status: 'live',
+    image: `${WARS_URL}/og-image.png`,
   },
   {
     id: 'kinegram',
