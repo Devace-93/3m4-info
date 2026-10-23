@@ -10,3 +10,4 @@ dist/
 # Local tooling
 .lavish/
 .playwright-mcp/
+.claude/worktrees/
