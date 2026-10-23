@@ -28,11 +28,11 @@ export const apps: AppEntry[] = [
   {
     id: 'wars',
     name: 'Wars',
-    url: 'https://github.com/Devace-93/wars',
+    url: WARS_URL,
     category: 'Games',
     description:
       'An open-source real-time strategy game in the spirit of the classic age-advancing RTS: 13 civilisations, four ages, random maps, a scenario editor, computer players and online multiplayer. Desktop, console, Android and iOS clients share one deterministic engine written in Rust.',
-    status: 'building',
+    status: 'live',
   },
   {
     id: 'kinegram',
