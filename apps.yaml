@@ -50,3 +50,15 @@ apps:
     devOnly: true
     urlVar: PUBLIC_ACCOUNTS_URL
     url: https://accounts.3m4.net
+  payments:
+    # Payments portal (payments.3m4.net): donations, subscriptions and
+    # supporter badges for every 3m4 app. Same shape as accounts: a docker
+    # compose stack on 8086 (`make up`), no --port flag, devOnly.
+    path: ../payments
+    engine: make
+    devCmd: make up && make logs
+    devPort: 8086
+    portFlag: false
+    devOnly: true
+    urlVar: PUBLIC_PAYMENTS_URL
+    url: https://payments.3m4.net
