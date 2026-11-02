@@ -42,6 +42,14 @@ function setMeta(selector: string, content: string): void {
 
 function apply(): void {
   const lang = getLang();
+  // Embedded widgets that read their label from a `data-label` attribute
+  // (payments.3m4.net/pay.js): set it before touching <html lang>. pay.js
+  // re-reads the attribute on every render and re-renders when <html lang>
+  // changes (MutationObserver) or on a `3m4.lang` storage event, so the
+  // button follows the language switch without re-mounting the script.
+  document.querySelectorAll<HTMLElement>('script[data-i18n-label]').forEach((el) => {
+    el.dataset.label = t(el.dataset.i18nLabel!);
+  });
   document.documentElement.lang = lang;
   document.documentElement.dir = RTL_LANGS.includes(lang.slice(0, 2)) ? 'rtl' : 'ltr';
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {

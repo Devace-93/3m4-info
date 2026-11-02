@@ -22,6 +22,8 @@ const categoryKeys: Record<string, string> = {
 // Shared identity service: the header widget (session.js) and the account
 // section below link to it. Local runs point it at the accounts stack.
 const ACCOUNTS_URL = import.meta.env.PUBLIC_ACCOUNTS_URL || 'https://accounts.3m4.net';
+// Payments portal: the hero and footer load its pay.js donate button (tags below).
+const PAYMENTS_URL = import.meta.env.PUBLIC_PAYMENTS_URL || 'https://payments.3m4.net';
 
 const title = '3m4 — Apps index';
 const description = 'Index of apps and tools published under 3m4.net, grouped by category.';
@@ -42,6 +44,10 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
         Small tools and games I've built and published under this domain. New ones get added
         here as they ship.
       </p>
+      <!-- pay.js (payments.3m4.net) appends its donate button here; see the
+           tags below. :empty hides the mount so nothing shifts while the
+           portal gates donations off for this viewer. -->
+      <div id="support-hero" class="support-mount"></div>
     </header>
 
     <section class="category account" id="account">
@@ -104,6 +110,7 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
     }
 
     <footer>
+      <div id="support-footer" class="support-mount"></div>
       <p>
         <span data-i18n="madeBy">Made by</span>{' '}
         <a href="https://www.linkedin.com/in/enrique-magallon/" target="_blank" rel="noopener noreferrer">Enrique Magallón</a>
@@ -113,6 +120,29 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
 </Base>
 
 <script is:inline src={`${ACCOUNTS_URL}/session.js`} data-mount="#session" defer></script>
+<!-- pay.js donate buttons ("Buy me a beer"): one tag per mount (hero and
+     footer); every tag shares one window.m4pay. The static sites report under
+     the `info` app. The portal gates donations per viewer (rollout flag) and
+     simply never mounts the button when they are off; the mounts are hidden
+     while empty. `data-label` is the English default: src/i18n/index.ts
+     rewrites it from the `donate` catalog key (data-i18n-label) on every
+     language apply(), and pay.js re-renders its label when <html lang> changes. -->
+{
+  ['#support-hero', '#support-footer'].map((mount) => (
+    <script
+      is:inline
+      src={`${PAYMENTS_URL}/pay.js`}
+      data-app="info"
+      data-kind="donate"
+      data-currency="usd"
+      data-amount="500"
+      data-label="Buy me a beer 🍺"
+      data-i18n-label="donate"
+      data-mount={mount}
+      defer
+    />
+  ))
+}
 
 <script>
   import { initI18n } from '../i18n';
@@ -194,6 +224,27 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   /* display: flex would beat the UA's [hidden] rule; keep the toggle working. */
   .account-actions[hidden] {
     display: none;
+  }
+
+  /* pay.js mounts (hero + footer). Hidden while empty so the layout does not
+     shift when the portal keeps the button away (gated rollout, offline). */
+  .support-mount {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .support-mount:empty {
+    display: none;
+  }
+
+  .hero .support-mount {
+    margin-top: 1.25rem;
+  }
+
+  footer .support-mount {
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .btn {
