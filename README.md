@@ -42,6 +42,10 @@ Add an entry to [`src/data/apps.ts`](src/data/apps.ts):
 }
 ```
 
+Sections appear in the order of the `categories` list in the same file; a
+category entry can carry `badge: 'beta'` to label the whole section. A new
+category not in that list is appended at the end, untranslated.
+
 ### Stack
 
 | Area | Technology |

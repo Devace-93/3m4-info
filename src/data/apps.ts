@@ -28,8 +28,25 @@ const SKETCH_URL = import.meta.env.PUBLIC_SKETCH_URL || 'https://sketch.3m4.net'
 const BLUEPRINT_URL = import.meta.env.PUBLIC_BLUEPRINT_URL || 'https://blueprint.3m4.net';
 const TRACE_URL = import.meta.env.PUBLIC_TRACE_URL || 'https://trace.3m4.net';
 
+export interface CategoryEntry {
+  name: string;
+  /** i18n key for the heading (src/i18n/catalog.ts). */
+  key: string;
+  /** Optional label shown next to the heading, e.g. a whole section still in beta. */
+  badge?: 'beta';
+}
+
+// Sections, in the order they appear on the page. A category used by an app
+// but missing here is appended after these, untranslated.
+export const categories: CategoryEntry[] = [
+  { name: 'Desktop & Drivers', key: 'catDesktop' },
+  { name: 'Games', key: 'catGames' },
+  { name: 'Tools & Generators', key: 'catTools', badge: 'beta' },
+  { name: 'AI Agents', key: 'catAgents' },
+];
+
 // Add new apps here as they get published — each entry becomes a card,
-// grouped and ordered by `category` in the order categories first appear.
+// grouped by `category` and ordered by the `categories` list above.
 export const apps: AppEntry[] = [
   {
     id: 'wars',

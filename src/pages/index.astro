@@ -1,23 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
-import { apps } from '../data/apps.ts';
+import { apps, categories, type CategoryEntry } from '../data/apps.ts';
 
-const categories: string[] = [];
+// Sections follow the order of `categories`; any category an app uses that is
+// not listed there goes last, in first-appearance order.
+const sections: CategoryEntry[] = [...categories];
 for (const app of apps) {
-  if (!categories.includes(app.category)) categories.push(app.category);
+  if (!sections.some((c) => c.name === app.category)) sections.push({ name: app.category, key: '' });
 }
-const grouped = categories.map((category) => ({
-  category,
-  apps: apps.filter((app) => app.category === category),
-}));
-
-// i18n keys (src/i18n/catalog.ts) for each category heading.
-const categoryKeys: Record<string, string> = {
-  'Tools & Generators': 'catTools',
-  Games: 'catGames',
-  'Desktop & Drivers': 'catDesktop',
-  'AI Agents': 'catAgents',
-};
+const grouped = sections
+  .map((category) => ({ category, apps: apps.filter((app) => app.category === category.name) }))
+  .filter(({ apps: categoryApps }) => categoryApps.length > 0);
 
 // Shared identity service: the header widget (session.js) and the account
 // section below link to it. Local runs point it at the accounts stack.
@@ -72,7 +65,14 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
     {
       grouped.map(({ category, apps: categoryApps }) => (
         <section class="category">
-          <h2 data-i18n={categoryKeys[category]}>{category}</h2>
+          <h2>
+            <span {...(category.key ? { 'data-i18n': category.key } : {})}>{category.name}</span>
+            {category.badge && (
+              <span class="badge badge-beta" data-i18n={category.badge}>
+                Beta
+              </span>
+            )}
+          </h2>
           <div class="grid">
             {categoryApps.map((app) => {
               const isLive = app.status === 'live';
@@ -333,6 +333,9 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   }
 
   .category h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     font-size: 1.1rem;
     color: var(--text-dim);
     font-weight: 600;
@@ -441,6 +444,14 @@ const description = 'Index of apps and tools published under 3m4.net, grouped by
   .badge-building {
     background: var(--badge-building-bg);
     color: var(--badge-building-text);
+  }
+
+  .badge-beta {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding-top: calc(0.2rem - 1px);
+    padding-bottom: calc(0.2rem - 1px);
   }
 
   .card-url {
