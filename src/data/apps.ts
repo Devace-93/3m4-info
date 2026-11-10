@@ -22,6 +22,8 @@ const METRICS_URL = import.meta.env.PUBLIC_METRICS_URL || 'https://metrics.3m4.n
 const WARS_URL = import.meta.env.PUBLIC_WARS_URL || 'https://wars.3m4.net';
 const OOPS_URL = import.meta.env.PUBLIC_OOPS_URL || 'https://oops.3m4.net';
 const MOUSETOUCH_URL = import.meta.env.PUBLIC_MOUSETOUCH_URL || 'https://mouse.3m4.net';
+const BOOTPICK_URL = import.meta.env.PUBLIC_BOOTPICK_URL || 'https://bootpick.3m4.net';
+const COSMIC_SWIPE_URL = import.meta.env.PUBLIC_COSMIC_SWIPE_URL || 'https://cosmic-swipe.3m4.net';
 const FLOWS_URL = import.meta.env.PUBLIC_FLOWS_URL || 'https://flows.3m4.net';
 const CREW_URL = import.meta.env.PUBLIC_CREW_URL || 'https://crew.3m4.net';
 const SKETCH_URL = import.meta.env.PUBLIC_SKETCH_URL || 'https://sketch.3m4.net';
@@ -147,6 +149,24 @@ export const apps: AppEntry[] = [
       'Native-feeling multitouch gestures for the Apple Magic Mouse on Linux/Wayland: workspace swipes with the desktop\'s own animation, pinch zoom, configurable taps and per-app rules, from a small userspace driver with a GTK settings app. One-line install, .deb/.rpm, AUR, Homebrew, Nix, crates.io.',
     status: 'live',
     image: `${MOUSETOUCH_URL}/og-image.png`,
+  },
+  {
+    id: 'bootpick',
+    name: 'bootpick',
+    url: BOOTPICK_URL,
+    category: 'Desktop & Drivers',
+    description: "A graphical UEFI boot menu with mouse support for computers with several systems: big icons with each system's real name and logo, backgrounds, many languages, and a desktop settings app that can hide the GRUB and systemd-boot menus behind it. Prebuilt release, easy to turn off or remove.",
+    status: 'live',
+    image: `${BOOTPICK_URL}/og-image.png`,
+  },
+  {
+    id: 'cosmicSwipe',
+    name: 'cosmic-swipe',
+    url: COSMIC_SWIPE_URL,
+    category: 'Desktop & Drivers',
+    description: "Swipe between workspaces inside the COSMIC workspace overview on Pop!_OS, with the strip following your fingers like macOS Mission Control. Prebuilt, no sudo, easy to remove.",
+    status: 'live',
+    image: `${COSMIC_SWIPE_URL}/demo.gif`,
   },
   {
     id: 'flows',
